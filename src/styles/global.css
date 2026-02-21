@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  /* TinyGoat Brand Colors */
+  --color-navy: #0B3040;
+  --color-navy-light: #134055;
+  --color-teal: #00B5B5;
+  --color-gold: #FDC858;
+  --color-off-white: #F8FAFC;
+
+  /* Font Family */
+  --font-family-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+
+  /* Custom Animations */
+  --animate-pulse-slow: pulse-slow 8s ease-in-out infinite;
+  --animate-pulse-slower: pulse-slower 12s ease-in-out infinite;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Keyframes */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes pulse-slower {
+  0%, 100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(1.08);
+  }
+}

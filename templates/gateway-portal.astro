@@ -1,0 +1,157 @@
+---
+/**
+ * TEMPLATE: Gateway Portal Page (Dual-Door Concept)
+ * Saved for future use - dark mode with animated orbs
+ *
+ * Design: Full-screen portal with two large clickable panels
+ * Use case: When you want visitors to self-select between two distinct audiences
+ */
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Gateway" description="Growth is a System. We build Digital Storefronts and Sales Engines.">
+  <main class="h-screen bg-navy relative overflow-hidden flex flex-col">
+    <!-- Atmospheric Background Orbs -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+      <!-- Teal Orb - Bottom Left -->
+      <div class="absolute -bottom-1/4 -left-1/4 w-[700px] h-[700px] bg-teal rounded-full blur-[120px] animate-pulse-slow"></div>
+      <!-- Gold Orb - Top Right -->
+      <div class="absolute -top-1/4 -right-1/4 w-[700px] h-[700px] bg-gold rounded-full blur-[120px] animate-pulse-slower"></div>
+      <!-- Center subtle glow -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-white/5 rounded-full blur-[100px]"></div>
+    </div>
+
+    <!-- Noise Texture Overlay -->
+    <div class="fixed inset-0 pointer-events-none opacity-[0.03] mix-blend-overlay" style="background-image: url('/noise.png'); background-repeat: repeat;"></div>
+
+    <!-- Content Layer -->
+    <div class="relative z-10 flex flex-col h-full">
+      <!-- Header with Logo -->
+      <header class="py-6 px-6 md:px-12 flex justify-center">
+        <a href="/" class="inline-block">
+          <div class="bg-white/95 rounded-2xl overflow-hidden shadow-2xl">
+            <img src="/tinygoat-logo.png" alt="TinyGoat" class="h-16 md:h-20 w-auto" />
+          </div>
+        </a>
+      </header>
+
+      <!-- Main Headline -->
+      <div class="text-center px-6 pt-4 pb-8 md:pt-8 md:pb-12">
+        <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4">
+          Growth is a System.
+        </h1>
+        <p class="text-white/50 text-lg md:text-xl max-w-2xl mx-auto">
+          We build the <span class="text-white font-semibold">Digital Storefronts</span> that capture leads, and the <span class="text-white font-semibold">Sales Engines</span> that close them.
+        </p>
+      </div>
+
+      <!-- Dual Portal Panels -->
+      <div class="flex-1 flex flex-col lg:flex-row gap-4 md:gap-6 px-4 md:px-8 lg:px-12 pb-6 md:pb-10 min-h-0">
+
+        <!-- Left Portal - The Storefront (Local) -->
+        <a
+          href="/local"
+          class="group flex-1 relative bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 hover:border-teal hover:bg-white/10 transition-all duration-500 ease-out overflow-hidden flex flex-col justify-between p-6 md:p-8 lg:p-10"
+        >
+          <!-- Watermark Icon -->
+          <div class="absolute -right-16 -bottom-16 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity duration-500">
+            <svg class="w-80 h-80 text-teal" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+
+          <!-- Content -->
+          <div class="relative z-10">
+            <div class="w-14 h-14 rounded-2xl bg-teal/10 border border-teal/20 flex items-center justify-center mb-6 group-hover:bg-teal/20 transition-colors duration-300">
+              <svg class="w-7 h-7 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <h2 class="text-white text-2xl md:text-3xl font-bold mb-2">The Storefront</h2>
+            <p class="text-teal font-medium mb-4">For Local Business & Home Services</p>
+            <p class="text-white/40 leading-relaxed text-sm md:text-base">
+              Dominate your neighborhood. Reputation Defense, Rankings, & High-Conversion Web Design.
+            </p>
+          </div>
+
+          <!-- Button -->
+          <div class="relative z-10 mt-6 md:mt-8">
+            <span class="inline-flex items-center px-6 py-3 bg-teal text-navy font-semibold rounded-full group-hover:shadow-[0_0_30px_rgba(0,181,181,0.4)] transition-all duration-300">
+              Enter Local Studio
+              <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+          </div>
+
+          <!-- Hover Glow Effect -->
+          <div class="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" style="box-shadow: inset 0 0 60px rgba(0, 181, 181, 0.1);"></div>
+        </a>
+
+        <!-- Divider (Desktop Only) -->
+        <div class="hidden lg:flex items-center justify-center">
+          <div class="w-px h-3/4 bg-gradient-to-b from-transparent via-white/20 to-transparent"></div>
+        </div>
+
+        <!-- Right Portal - The Engine (RevOps) -->
+        <a
+          href="/systems"
+          class="group flex-1 relative bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 hover:border-gold hover:bg-white/10 transition-all duration-500 ease-out overflow-hidden flex flex-col justify-between p-6 md:p-8 lg:p-10"
+        >
+          <!-- Watermark Icon -->
+          <div class="absolute -right-16 -bottom-16 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity duration-500">
+            <svg class="w-80 h-80 text-gold" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+
+          <!-- Content -->
+          <div class="relative z-10">
+            <div class="w-14 h-14 rounded-2xl bg-gold/10 border border-gold/20 flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors duration-300">
+              <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h2 class="text-white text-2xl md:text-3xl font-bold mb-2">The Engine</h2>
+            <p class="text-gold font-medium mb-4">For Agencies, SaaS & Consultants</p>
+            <p class="text-white/40 leading-relaxed text-sm md:text-base">
+              Scale your systems. CRM Architecture, Pipeline Velocity, & Revenue Operations.
+            </p>
+          </div>
+
+          <!-- Button -->
+          <div class="relative z-10 mt-6 md:mt-8">
+            <span class="inline-flex items-center px-6 py-3 bg-gold text-navy font-semibold rounded-full group-hover:shadow-[0_0_30px_rgba(253,200,88,0.4)] transition-all duration-300">
+              Enter Sales Lab
+              <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+          </div>
+
+          <!-- Hover Glow Effect -->
+          <div class="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" style="box-shadow: inset 0 0 60px rgba(253, 200, 88, 0.1);"></div>
+        </a>
+      </div>
+
+      <!-- Footer -->
+      <footer class="py-4 px-6 text-center">
+        <p class="text-white/20 text-xs">
+          &copy; 2025 TinyGoat. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  /* Custom animation classes */
+  .animate-pulse-slow {
+    animation: pulse-slow 8s ease-in-out infinite;
+  }
+  .animate-pulse-slower {
+    animation: pulse-slower 12s ease-in-out infinite;
+  }
+</style>

@@ -1,0 +1,356 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Local Business" description="A Digital Presence as Professional as Your Work. We build websites and reputation systems for local service businesses.">
+  <main class="min-h-screen bg-off-white relative overflow-hidden">
+    <!-- Atmospheric Background Mesh -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -top-1/4 -right-1/4 w-[1000px] h-[1000px] bg-teal/10 rounded-full blur-[200px]"></div>
+      <div class="absolute -bottom-1/2 -left-1/4 w-[800px] h-[800px] bg-gold/8 rounded-full blur-[180px]"></div>
+    </div>
+
+    <!-- Noise Texture Overlay -->
+    <div class="fixed inset-0 pointer-events-none opacity-[0.20] mix-blend-overlay" style="background-image: url('/noise.png'); background-repeat: repeat;"></div>
+
+    <!-- Content Layer -->
+    <div class="relative z-10">
+      <!-- Navigation -->
+      <nav class="py-6 px-6 md:px-12 flex items-center justify-between max-w-7xl mx-auto">
+        <a href="/" class="inline-flex items-center">
+          <img src="/tinygoat-logo.png" alt="TinyGoat" class="h-14 md:h-16 w-auto" />
+        </a>
+        <a href="/" class="inline-flex items-center text-navy/50 hover:text-teal transition-all duration-300 text-sm group">
+          <svg class="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Back to Gateway
+        </a>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="px-6 md:px-12 py-16 md:py-24 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-5 gap-12 lg:gap-16 items-center">
+          <!-- Left Column - Text (60%) -->
+          <div class="lg:col-span-3 flex flex-col justify-center">
+            <p class="text-teal uppercase tracking-[0.25em] text-sm font-semibold mb-6">For Local Service Businesses</p>
+            <h1 class="text-navy text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-8">
+              A Digital Presence as <span class="bg-gradient-to-r from-teal to-gold bg-clip-text text-transparent">Professional</span> as Your Work.
+            </h1>
+            <p class="text-navy/60 text-lg md:text-xl mb-10 leading-relaxed max-w-2xl">
+              You prioritize quality and reliability for your customers. We build mobile-first websites and reputation systems that do the same—making it easy for neighbors to find, trust, and book you.
+            </p>
+            <a
+              href="#audit"
+              class="inline-flex items-center px-8 py-4 bg-teal text-white font-semibold text-lg rounded-full hover:shadow-[0_0_40px_rgba(0,181,181,0.4)] transition-all duration-300 group w-fit"
+            >
+              Get a Free Visibility Audit
+              <svg class="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Right Column - Hero Image (40%) -->
+          <div class="lg:col-span-2 mt-12 lg:mt-0">
+            <div class="relative">
+              <!-- Teal Backlight Glow -->
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div class="w-[80%] h-[80%] bg-teal rounded-full blur-[100px] opacity-20"></div>
+              </div>
+              <!-- Floating Image -->
+              <img
+                src="/local-business-5-star-review.png.png"
+                alt="5-star review on mobile phone"
+                class="relative z-10 w-full max-w-md mx-auto rounded-3xl shadow-2xl shadow-teal-900/10 border border-white/50"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust Bar -->
+        <div class="mt-16 pt-10 border-t border-navy/10">
+          <p class="text-navy/40 text-sm font-medium mb-6">We help you build trust where it matters:</p>
+          <div class="flex flex-wrap items-center gap-8 md:gap-12">
+            <!-- Google -->
+            <div class="flex items-center gap-3 text-navy/50">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+              </svg>
+              <span class="font-medium">Google</span>
+            </div>
+            <!-- Facebook -->
+            <div class="flex items-center gap-3 text-navy/50">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+              <span class="font-medium">Facebook</span>
+            </div>
+            <!-- Instagram -->
+            <div class="flex items-center gap-3 text-navy/50">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+              <span class="font-medium">Instagram</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Bento Grid -->
+      <section class="px-6 md:px-12 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto">
+          <p class="text-teal/70 uppercase tracking-[0.2em] text-sm font-semibold mb-4">What We Do</p>
+          <h2 class="text-navy text-3xl md:text-4xl lg:text-5xl font-bold mb-16 max-w-2xl">
+            Everything You Need to Build <span class="bg-gradient-to-r from-teal to-gold bg-clip-text text-transparent">Trust Online.</span>
+          </h2>
+
+          <!-- Bento Grid -->
+          <div class="grid md:grid-cols-2 gap-6">
+
+            <!-- Card 1: THE WEBSITE (Large - Spans 2 Cols) -->
+            <div class="md:col-span-2 group relative bg-white/60 backdrop-blur-md rounded-3xl p-8 md:p-12 border border-white/40 shadow-lg hover:shadow-2xl hover:border-teal/30 transition-all duration-500 overflow-hidden">
+              <!-- Watermark Icon - Smartphone -->
+              <div class="absolute -right-20 -bottom-20 opacity-[0.03] group-hover:opacity-[0.07] transition-opacity duration-500">
+                <svg class="w-96 h-96 text-teal" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+              </div>
+
+              <div class="relative z-10 flex flex-col lg:flex-row lg:items-start gap-8">
+                <div class="flex-1">
+                  <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-teal/20 to-teal/5 flex items-center justify-center mb-6 border border-teal/20 group-hover:border-teal/40 transition-colors">
+                    <svg class="w-8 h-8 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <p class="text-teal font-semibold text-sm uppercase tracking-wider mb-2">The Foundation</p>
+                  <h3 class="text-navy text-2xl md:text-3xl font-bold mb-4">Websites Built for Service</h3>
+                  <p class="text-navy/50 text-lg leading-relaxed mb-6">
+                    Most local sites are hard to use on a phone. We build clean, fast mobile sites that make it incredibly easy for customers to call or book you. No clutter, just results.
+                  </p>
+                  <p class="text-navy font-semibold text-sm border-l-2 border-teal/50 pl-4">
+                    Designed for Speed & Ease.
+                  </p>
+                </div>
+
+                <!-- Key Benefits -->
+                <div class="lg:w-80 space-y-4">
+                  <div class="flex items-start gap-3 bg-white/50 rounded-2xl p-4 border border-navy/5">
+                    <div class="w-8 h-8 rounded-full bg-teal/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg class="w-4 h-4 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-navy font-semibold text-sm">Mobile-First Design</p>
+                      <p class="text-navy/50 text-sm">Looks great on any phone</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3 bg-white/50 rounded-2xl p-4 border border-navy/5">
+                    <div class="w-8 h-8 rounded-full bg-teal/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg class="w-4 h-4 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-navy font-semibold text-sm">One-Tap Calling</p>
+                      <p class="text-navy/50 text-sm">Easy to reach you instantly</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3 bg-white/50 rounded-2xl p-4 border border-navy/5">
+                    <div class="w-8 h-8 rounded-full bg-teal/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg class="w-4 h-4 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-navy font-semibold text-sm">Fast Load Times</p>
+                      <p class="text-navy/50 text-sm">No waiting, no frustration</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: AUTOMATED REVIEWS -->
+            <div class="group relative bg-white/60 backdrop-blur-md rounded-3xl p-8 border border-white/40 shadow-lg hover:shadow-2xl hover:border-gold/30 transition-all duration-500 overflow-hidden">
+              <!-- Watermark Icon - Star -->
+              <div class="absolute -right-10 -bottom-10 opacity-[0.03] group-hover:opacity-[0.07] transition-opacity duration-500">
+                <svg class="w-48 h-48 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+              </div>
+
+              <div class="relative z-10">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold/20 to-gold/5 flex items-center justify-center mb-6 border border-gold/20 group-hover:border-gold/40 transition-colors">
+                  <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                  </svg>
+                </div>
+                <p class="text-gold font-semibold text-sm uppercase tracking-wider mb-2">The Reputation</p>
+                <h3 class="text-navy text-xl md:text-2xl font-bold mb-4">Automated 5-Star Growth</h3>
+                <p class="text-navy/50 leading-relaxed">
+                  Building trust shouldn't add to your workload. Our system automatically requests feedback when a job is done, helping you stack up 5-star reviews on Google while you focus on the next job.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3: ACTIVE PRESENCE -->
+            <div class="group relative bg-white/60 backdrop-blur-md rounded-3xl p-8 border border-white/40 shadow-lg hover:shadow-2xl hover:border-teal/30 transition-all duration-500 overflow-hidden">
+              <!-- Watermark Icon - Checkmark/Map -->
+              <div class="absolute -right-10 -bottom-10 opacity-[0.03] group-hover:opacity-[0.07] transition-opacity duration-500">
+                <svg class="w-48 h-48 text-teal" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+
+              <div class="relative z-10">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal/20 to-teal/5 flex items-center justify-center mb-6 border border-teal/20 group-hover:border-teal/40 transition-colors">
+                  <svg class="w-7 h-7 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <p class="text-teal font-semibold text-sm uppercase tracking-wider mb-2">The Visibility</p>
+                <h3 class="text-navy text-xl md:text-2xl font-bold mb-4">Active & Verified</h3>
+                <p class="text-navy/50 leading-relaxed">
+                  An inactive profile loses customers. We keep your Google Business Profile and social pages fresh with updates, photos, and activity so neighbors know you are open and ready to work.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Audit CTA Section -->
+      <section id="audit" class="px-6 md:px-12 py-16 md:py-24">
+        <div class="max-w-5xl mx-auto">
+          <div class="bg-gradient-to-br from-navy via-navy to-navy-light rounded-3xl p-8 md:p-14 relative overflow-hidden">
+            <!-- Background Glows -->
+            <div class="absolute -top-1/2 -right-1/4 w-[500px] h-[500px] bg-teal/15 rounded-full blur-[120px]"></div>
+            <div class="absolute -bottom-1/2 -left-1/4 w-[400px] h-[400px] bg-gold/15 rounded-full blur-[100px]"></div>
+
+            <div class="relative z-10 flex flex-col lg:flex-row lg:items-center gap-10">
+              <div class="flex-1">
+                <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold mb-4">Free Visibility Audit</p>
+                <h2 class="text-white text-3xl md:text-4xl font-bold mb-4">
+                  See What Your Competitors Are Doing.
+                </h2>
+                <p class="text-white/60 text-lg leading-relaxed">
+                  Our Free Audit scans your local area to show you where you rank on Maps, how your reviews compare, and where you might be losing customers.
+                </p>
+              </div>
+              <div class="lg:flex-shrink-0">
+                <a
+                  href="#contact"
+                  class="inline-flex items-center px-8 py-4 bg-gold text-navy font-bold text-lg rounded-full hover:shadow-[0_0_40px_rgba(253,200,88,0.5)] transition-all duration-300 group"
+                >
+                  Run My Free Audit
+                  <svg class="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section id="contact" class="px-6 md:px-12 py-16 md:py-24">
+        <div class="max-w-xl mx-auto">
+          <p class="text-teal/70 uppercase tracking-[0.2em] text-sm font-semibold text-center mb-4">Get Your Free Audit</p>
+          <h2 class="text-navy text-3xl md:text-4xl font-bold text-center mb-4">
+            Let's See Where <span class="bg-gradient-to-r from-teal to-gold bg-clip-text text-transparent">You Stand.</span>
+          </h2>
+          <p class="text-navy/50 text-center mb-10 text-lg">
+            Drop your info and we'll send you a complete visibility report for your area.
+          </p>
+          <form
+            name="local-audit"
+            method="POST"
+            data-netlify="true"
+            class="bg-white/70 backdrop-blur-md rounded-3xl p-8 md:p-10 border border-white/40 shadow-xl"
+          >
+            <input type="hidden" name="form-name" value="local-audit" />
+            <div class="mb-6">
+              <label for="name" class="block text-navy/80 font-medium mb-3">
+                Your name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="John Smith"
+                required
+                class="w-full px-5 py-4 bg-white/50 border border-navy/10 rounded-2xl focus:border-teal/50 focus:bg-white focus:outline-none transition-all duration-300 text-navy placeholder:text-navy/30"
+              />
+            </div>
+            <div class="mb-6">
+              <label for="email" class="block text-navy/80 font-medium mb-3">
+                Your email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="john@yourbusiness.com"
+                required
+                class="w-full px-5 py-4 bg-white/50 border border-navy/10 rounded-2xl focus:border-teal/50 focus:bg-white focus:outline-none transition-all duration-300 text-navy placeholder:text-navy/30"
+              />
+            </div>
+            <div class="mb-8">
+              <label for="business" class="block text-navy/80 font-medium mb-3">
+                What type of business?
+              </label>
+              <input
+                type="text"
+                id="business"
+                name="business"
+                placeholder="Plumbing, HVAC, Landscaping..."
+                required
+                class="w-full px-5 py-4 bg-white/50 border border-navy/10 rounded-2xl focus:border-teal/50 focus:bg-white focus:outline-none transition-all duration-300 text-navy placeholder:text-navy/30"
+              />
+            </div>
+            <button
+              type="submit"
+              class="w-full px-6 py-4 bg-teal text-white font-bold rounded-full hover:shadow-[0_0_40px_rgba(0,181,181,0.4)] transition-all duration-300"
+            >
+              Get My Free Audit
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="px-6 md:px-12 py-8 border-t border-navy/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+          <p class="text-navy/30 text-sm">
+            &copy; 2025 TinyGoat. All rights reserved.
+          </p>
+          <a href="/" class="text-navy/30 hover:text-teal text-sm mt-4 md:mt-0 transition-colors">
+            TinyGoat.io
+          </a>
+        </div>
+      </footer>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  /* Floating animation for hero image */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+</style>
