@@ -27,6 +27,15 @@ const { title, description = "TinyGoat - Growth is a System" } = Astro.props;
     />
     <meta name="generator" content={Astro.generator} />
     <title>{title} | TinyGoat</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLXRVR1DNZ"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KLXRVR1DNZ');
+    </script>
   </head>
   <body>
     <slot />
