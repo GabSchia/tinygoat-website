@@ -1,0 +1,14 @@
+## Redirect old Squarespace URLs (e.g., /blog) to the homepage
+## This fixes 404s and indexing errors in Google Search Console
+
+/blog/*    /    301
+
+## If there are any other specific old pages (like /about, /contact):
+/about     /    301
+/contact   /    301
+
+## Catch-all for any other 404s (optional but good for clean UX)
+## We redirect everything that isn't a known Astro route to the homepage 
+## (Note: Astro's built-in 404 page is usually better, so this is commented out,
+## but we can enable it if GSC is throwing lots of random errors)
+# /* / 404
