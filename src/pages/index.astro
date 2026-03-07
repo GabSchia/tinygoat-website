@@ -2,13 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="TinyGoat - Sales Operations & Growth Strategy" description="We help B2B businesses build the sales systems they need to scale. Strategy, process design, and partnerships for sustainable growth.">
+<Layout title="TinyGoat - Sales Clarity & AI Efficiency" description="Sales clarity for founders who over-explain. AI efficiency for sales teams drowning in tools. Work smarter, not harder.">
   <main class="min-h-screen bg-white relative overflow-hidden">
     <!-- Subtle Atmospheric Background -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <!-- Soft teal glow - top right -->
       <div class="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] bg-teal/5 rounded-full blur-[150px]"></div>
-      <!-- Soft gold glow - bottom left -->
       <div class="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-gold/5 rounded-full blur-[120px]"></div>
     </div>
 
@@ -17,418 +15,481 @@ import Layout from '../layouts/Layout.astro';
 
     <!-- Content Layer -->
     <div class="relative z-10">
-    <!-- Navigation -->
-    <nav class="py-6 px-6 md:px-12 flex items-center justify-between max-w-7xl mx-auto">
-      <a href="/" class="inline-flex items-center">
-        <img src="/tinygoat-logo.png" alt="TinyGoat" class="h-20 md:h-24 w-auto" width="96" height="96" />
-      </a>
-      <div class="flex items-center gap-6">
-        <a href="#services" class="text-gray-600 hover:text-navy transition-colors text-sm font-medium hidden md:block">Services</a>
-        <a href="#about" class="text-gray-600 hover:text-navy transition-colors text-sm font-medium hidden md:block">About</a>
-        <a href="#contact" class="inline-flex items-center px-5 py-2.5 bg-gold text-navy font-semibold text-sm rounded-full hover:shadow-lg hover:shadow-gold/20 transition-all duration-300">
-          Get in Touch
+      <!-- Navigation -->
+      <nav class="py-6 px-6 md:px-12 flex items-center justify-between max-w-7xl mx-auto">
+        <a href="/" class="inline-flex items-center">
+          <img src="/tinygoat-logo.png" alt="TinyGoat" class="h-20 md:h-24 w-auto" width="96" height="96" />
         </a>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="px-6 md:px-12 py-20 md:py-32 max-w-5xl mx-auto text-center">
-      <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold mb-6">Sales Operations & Growth Strategy</p>
-      <h1 class="text-navy text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6">
-        Build Systems That Scale.
-      </h1>
-      <p class="text-gray-600 text-lg md:text-xl mb-10 leading-relaxed max-w-2xl mx-auto">
-        I bring clarity and consistency to B2B growth. As your team scales and complexity increases, I help strengthen processes, sharpen your pitch, and convert interest into revenue—predictably.
-      </p>
-      <a
-        href="#contact"
-        class="inline-flex items-center px-8 py-4 bg-gold text-navy font-semibold text-lg rounded-full hover:shadow-lg hover:shadow-gold/20 transition-all duration-300 group"
-      >
-        Schedule an Intro Call
-        <svg class="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-        </svg>
-      </a>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="px-6 md:px-12 py-20 md:py-24 bg-gray-50">
-      <div class="max-w-6xl mx-auto">
-        <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold text-center mb-4">What We Do</p>
-        <h2 class="text-navy text-3xl md:text-4xl font-bold text-center mb-16">
-          How we help you grow.
-        </h2>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Service 1: Sales Process -->
-          <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg hover:border-gray-300 transition-all duration-300">
-            <div class="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center mb-6">
-              <svg class="w-6 h-6 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
-              </svg>
-            </div>
-            <h3 class="text-navy text-xl font-bold mb-3">Sales Process Design</h3>
-            <p class="text-gray-600 leading-relaxed">
-              I map your sales workflow, identify bottlenecks, and build repeatable processes your team can actually follow.
-            </p>
-          </div>
-
-          <!-- Service 2: Partnerships -->
-          <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg hover:border-gray-300 transition-all duration-300">
-            <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center mb-6">
-              <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-            </div>
-            <h3 class="text-navy text-xl font-bold mb-3">Strategic Partnerships</h3>
-            <p class="text-gray-600 leading-relaxed">
-              I help you identify, approach, and close partnership opportunities that open new markets and revenue streams.
-            </p>
-          </div>
-
-          <!-- Service 3: Sales Training & Pitch -->
-          <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg hover:border-gray-300 transition-all duration-300">
-            <div class="w-12 h-12 rounded-xl bg-navy/10 flex items-center justify-center mb-6">
-              <svg class="w-6 h-6 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-              </svg>
-            </div>
-            <h3 class="text-navy text-xl font-bold mb-3">Sales Training & Pitch</h3>
-            <p class="text-gray-600 leading-relaxed">
-              Smart people often struggle to sell themselves. I help founders and teams craft their pitch, build confidence, and close more deals.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="px-6 md:px-12 py-20 md:py-24">
-      <div class="max-w-5xl mx-auto">
-        <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold text-center mb-4">How We Work</p>
-        <h2 class="text-navy text-3xl md:text-4xl font-bold text-center mb-16">
-          A simple, proven process.
-        </h2>
-
-        <div class="grid md:grid-cols-3 gap-8 md:gap-12">
-          <!-- Step 1: Discovery -->
-          <div class="text-center">
-            <div class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6">
-              <span class="text-gold text-2xl font-bold">1</span>
-            </div>
-            <h3 class="text-navy text-xl font-bold mb-3">Discovery</h3>
-            <p class="text-gray-600 leading-relaxed">
-              I dig into your current state—your goals, your pipeline, your pain points. No assumptions, just understanding.
-            </p>
-          </div>
-
-          <!-- Step 2: Strategy -->
-          <div class="text-center">
-            <div class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6">
-              <span class="text-gold text-2xl font-bold">2</span>
-            </div>
-            <h3 class="text-navy text-xl font-bold mb-3">Strategy</h3>
-            <p class="text-gray-600 leading-relaxed">
-              Together, we design the systems and approach that fit your business—not a one-size-fits-all playbook.
-            </p>
-          </div>
-
-          <!-- Step 3: Execution -->
-          <div class="text-center">
-            <div class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6">
-              <span class="text-gold text-2xl font-bold">3</span>
-            </div>
-            <h3 class="text-navy text-xl font-bold mb-3">Execution</h3>
-            <p class="text-gray-600 leading-relaxed">
-              Whether it's training your team, optimizing your sales workflows, or generating leads directly—I work alongside you to make sure everything actually sticks.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="px-6 md:px-12 py-20 md:py-24 bg-gray-50">
-      <div class="max-w-4xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <!-- Headshot -->
-            <div class="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden mb-6 border-4 border-white shadow-lg">
-              <img src="/Website Photo.png" alt="Gabrielle Schiavenato" class="w-full h-full object-cover object-[50%_35%] scale-150" width="128" height="128" loading="lazy" />
-            </div>
-            <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold mb-4">Who I Am</p>
-            <h2 class="text-navy text-3xl md:text-4xl font-bold mb-6">
-              Sales executive first. Systems thinker second.
-            </h2>
-            <p class="text-gray-600 leading-relaxed mb-6">
-              I'm a top-performing sales professional who's spent years building pipelines and closing deals at startups, agencies, and mid-market companies. I know what it takes to hit quota—and I know the operational chaos that gets in the way.
-            </p>
-            <p class="text-gray-600 leading-relaxed">
-              My approach is relationship-first. I help founders and teams not just optimize their workflows, but learn how to actually sell—how to pitch, how to build trust, and how to close. Sometimes the smartest people struggle to articulate what they offer. That's where I come in.
-            </p>
-          </div>
-          <div>
-            <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
-              <div class="space-y-6">
-                <div class="flex items-start gap-4">
-                  <div class="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center flex-shrink-0">
-                    <svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="text-navy font-semibold">Relationship-First</p>
-                    <p class="text-gray-600 text-sm">Sales built on trust, not tricks</p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-4">
-                  <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
-                    <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="text-navy font-semibold">In The Trenches</p>
-                    <p class="text-gray-600 text-sm">I've carried a bag and hit the numbers</p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-4">
-                  <div class="w-10 h-10 rounded-full bg-navy/10 flex items-center justify-center flex-shrink-0">
-                    <svg class="w-5 h-5 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="text-navy font-semibold">Startups to Mid-Market</p>
-                    <p class="text-gray-600 text-sm">Scaled with teams at every stage</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Upwork Reviews -->
-            <div class="mt-16 bg-white/60 rounded-lg border border-gray-100 overflow-hidden">
-            <!-- Header -->
-            <div class="flex items-center gap-3 px-3 py-2 border-b border-gray-100">
-              <a href="https://www.upwork.com/freelancers/~01eb0839c54a67ebe5" target="_blank" rel="noopener noreferrer" class="text-[#14A800] font-bold text-sm flex-shrink-0 hover:underline">Upwork</a>
-              <div class="flex items-center gap-2 text-xs">
-                <span class="flex items-center gap-1 text-gray-700 font-medium">
-                  <svg class="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                  </svg>
-                  100% Job Success
-                </span>
-                <span class="text-gray-300">•</span>
-                <span class="flex items-center gap-1 text-gray-700 font-medium">
-                  <svg class="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                  Top Rated
-                </span>
-              </div>
-            </div>
-            <!-- Quotes -->
-            <div class="px-3 py-2 space-y-2">
-              <p class="text-gray-600 text-xs italic leading-relaxed">"An exceptional contractor and true problem-solver... She communicates clearly, works efficiently, and always delivers high-quality results."</p>
-              <p class="text-gray-600 text-xs italic leading-relaxed">"Amazing to work with! Great attention to detail... The quality of her work exceeded expectations."</p>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Partnership Section -->
-    <section class="px-6 md:px-12 py-20 md:py-24">
-      <div class="max-w-4xl mx-auto">
-        <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold text-center mb-4">Strategic Partner</p>
-        <h2 class="text-navy text-3xl md:text-4xl font-bold text-center mb-6">
-          Growth that aligns with your values.
-        </h2>
-        <p class="text-gray-600 text-center text-lg mb-12 max-w-2xl mx-auto">
-          For sustainability-focused businesses, I partner with Asthenos Consulting to deliver integrated growth and ESG strategy.
-        </p>
-
-        <div class="bg-white rounded-2xl p-8 md:p-10 border border-gray-200 shadow-sm">
-          <div class="flex flex-col md:flex-row items-center gap-8">
-            <div class="flex-shrink-0">
-              <a href="https://www.asthenos-consulting.com/" target="_blank" rel="noopener noreferrer">
-                <img src="/Asthenos_Consulting_01_edited.avif" alt="Asthenos Consulting" class="w-20 h-20 rounded-2xl object-contain" width="80" height="80" loading="lazy" />
-              </a>
-            </div>
-            <div class="flex-1 text-center md:text-left">
-              <h3 class="text-navy text-xl font-bold mb-2">Asthenos Consulting</h3>
-              <p class="text-gray-600 leading-relaxed mb-4">
-                Deep background in ESG and sustainability strategy, helping companies align growth with environmental values. Together, we understand the unique challenges sustainability-focused businesses face when scaling operations and maintaining mission integrity.
-              </p>
-              <a href="https://www.asthenos-consulting.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-teal font-semibold hover:text-teal/80 transition-colors">
-                Learn more about Asthenos
-                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="px-6 md:px-12 py-20 md:py-24 bg-gray-50">
-      <div class="max-w-3xl mx-auto">
-        <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold text-center mb-4">FAQ</p>
-        <h2 class="text-navy text-3xl md:text-4xl font-bold text-center mb-12">
-          Common questions.
-        </h2>
-
-        <div class="space-y-4">
-          <!-- FAQ Item 1 -->
-          <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="text-navy font-semibold text-lg">What sets your services apart?</span>
-              <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-              I blend years of sales and operations experience with cutting-edge AI to deliver tailored, high-impact systems that teams actually need and benefit from. I've been in your shoes!
-            </div>
-          </details>
-
-          <!-- FAQ Item 2 -->
-          <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="text-navy font-semibold text-lg">How do engagements typically work?</span>
-              <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-              We start with a discovery call to understand your goals and challenges. From there, I'll propose a tailored engagement—whether that's a focused project, ongoing advisory, or hands-on execution alongside your team.
-            </div>
-          </details>
-
-          <!-- FAQ Item 3 -->
-          <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="text-navy font-semibold text-lg">What industries do you work with?</span>
-              <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-              I work primarily with B2B companies—SaaS, agencies, professional services, and consultancies. If you're selling to other businesses and need help with your sales motion, we're likely a good fit.
-            </div>
-          </details>
-
-          <!-- FAQ Item 4 -->
-          <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="text-navy font-semibold text-lg">Do you work with early-stage startups?</span>
-              <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-              Absolutely. Early-stage is often when sales process matters most—before bad habits form. I help founders build the right foundation from day one, so they can scale without chaos later.
-            </div>
-          </details>
-
-          <!-- FAQ Item 5 -->
-          <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="text-navy font-semibold text-lg">Do we need an existing sales process, or can you build from scratch?</span>
-              <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-              Either works. I can build your sales process and org from scratch, or optimize what you already have. Whether you're starting from zero or just need to tighten things up, we'll meet you where you are.
-            </div>
-          </details>
-
-          <!-- FAQ Item 6 -->
-          <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
-            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-              <span class="text-navy font-semibold text-lg">Why the name TinyGoat?</span>
-              <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-              <p class="mb-4">Book a free consultation today and along with discussing how we can help your growth, we'll tell you. Just kidding—TinyGoat is named after our pup Santiago, who with his big ears looks like a baby goat.</p>
-              <img src="/Santiago.jpeg" alt="Santiago the TinyGoat" class="w-32 h-32 rounded-2xl object-cover shadow-md" loading="lazy" />
-            </div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA / Contact Section -->
-    <section id="contact" class="px-6 md:px-12 py-20 md:py-24">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-navy text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-          Let's talk.
-        </h2>
-        <p class="text-gray-600 text-lg mb-10 max-w-xl mx-auto">
-          Whether you need help with sales process, partnerships, pitch, or training your team—I'd love to hear what you're working on.
-        </p>
-
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          action="/success.html"
-          class="bg-white rounded-2xl p-8 md:p-10 border border-gray-200 shadow-sm text-left max-w-lg mx-auto"
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <div class="mb-5">
-            <label for="name" class="block text-gray-700 font-medium mb-2 text-sm">
-              Your name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your name"
-              required
-              class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-teal focus:ring-1 focus:ring-teal focus:outline-none focus:bg-white transition-all duration-300 text-gray-800 placeholder:text-gray-600"
-            />
-          </div>
-          <div class="mb-5">
-            <label for="email" class="block text-gray-700 font-medium mb-2 text-sm">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="you@company.com"
-              required
-              class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-teal focus:ring-1 focus:ring-teal focus:outline-none focus:bg-white transition-all duration-300 text-gray-800 placeholder:text-gray-600"
-            />
-          </div>
-          <div class="mb-6">
-            <label for="message" class="block text-gray-700 font-medium mb-2 text-sm">
-              What are you working on?
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Tell us about your business and what you're looking for help with..."
-              rows="4"
-              class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-teal focus:ring-1 focus:ring-teal focus:outline-none focus:bg-white transition-all duration-300 text-gray-800 placeholder:text-gray-600 resize-none"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            class="w-full px-6 py-4 bg-gold text-navy font-bold rounded-full hover:shadow-lg hover:shadow-gold/20 transition-all duration-300"
-          >
-            Send Message
+        <div class="flex items-center gap-6">
+          <a href="#services" class="text-gray-600 hover:text-navy transition-colors text-sm font-medium hidden md:block">Services</a>
+          <a href="#about" class="text-gray-600 hover:text-navy transition-colors text-sm font-medium hidden md:block">About</a>
+          <a href="#faq" class="text-gray-600 hover:text-navy transition-colors text-sm font-medium hidden md:block">FAQ</a>
+          <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/gabby-tinygoat/30min'});return false;" class="inline-flex items-center px-5 py-2.5 bg-gold text-navy font-semibold text-sm rounded-full hover:shadow-lg hover:shadow-gold/20 transition-all duration-300 cursor-pointer">
+            Get in Touch
           </button>
-        </form>
-      </div>
-    </section>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="px-6 md:px-12 py-16 md:py-28 max-w-5xl mx-auto text-center">
+        <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold mb-6">Sales Clarity & AI Efficiency</p>
+        <h1 class="text-navy text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6">
+          You know your stuff.<br class="hidden md:block" /> Let's make sure it lands.
+        </h1>
+        <p class="text-gray-600 text-lg md:text-xl mb-10 leading-relaxed max-w-2xl mx-auto">
+          Sales clarity for founders who over-explain. AI education and confidence for sales teams unsure where to start. I help you cut the noise and work smarter, not harder.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="#services"
+            class="inline-flex items-center justify-center px-8 py-4 bg-gold text-navy font-semibold text-lg rounded-full hover:shadow-lg hover:shadow-gold/20 transition-all duration-300 group"
+          >
+            See How I Help
+            <svg class="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+          <button
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/gabby-tinygoat/30min'});return false;"
+            class="inline-flex items-center justify-center px-8 py-4 border-2 border-navy text-navy font-semibold text-lg rounded-full hover:bg-navy hover:text-white transition-all duration-300 cursor-pointer"
+          >
+            Book a Call
+          </button>
+        </div>
+      </section>
+
+      <!-- Two Paths Section -->
+      <section id="services" class="px-6 md:px-12 py-20 md:py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+          <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold text-center mb-4">Who I Help</p>
+          <h2 class="text-navy text-3xl md:text-4xl font-bold text-center mb-6">
+            Two paths. One goal: clarity.
+          </h2>
+          <p class="text-gray-600 text-center text-lg mb-16 max-w-2xl mx-auto">
+            Whether you're a founder learning to pitch or a sales team figuring out AI, I meet you where you are.
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+            <!-- Path 1: Founders -->
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 md:p-10 hover:shadow-xl hover:border-teal/30 transition-all duration-300">
+              <div class="w-14 h-14 rounded-xl bg-teal/10 flex items-center justify-center mb-6">
+                <svg class="w-7 h-7 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 class="text-navy text-2xl font-bold mb-4">For Founders & First Sales Hires</h3>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                You're the expert, but the pitch is too long, too vague, or buried in detail. You don't need sales training. You need someone to help you <span class="font-semibold text-navy">cut the fluff and get direct</span>.
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Pitch clarity & positioning</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Go-to-market strategy</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Sales process setup</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">1:1 advisory & coaching</span>
+                </li>
+              </ul>
+              <p class="text-sm text-gray-500 italic">For founders who know their product but can't quite land the pitch.</p>
+            </div>
+
+            <!-- Path 2: Sales Teams -->
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 md:p-10 hover:shadow-xl hover:border-gold/30 transition-all duration-300">
+              <div class="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-6">
+                <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 class="text-navy text-2xl font-bold mb-4">For Sales Teams & Leaders</h3>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                You believe in relationship-centered sales. You have tools, but it's either "just use ChatGPT for emails" or you're overwhelmed by everything leadership keeps adding to your stack. There's a middle ground where AI <span class="font-semibold text-navy">actually makes you faster</span> without adding complexity.
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">AI for Sales workshops & trainings</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Custom prompt libraries</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Workflow audits & recommendations</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Team presentations</span>
+                </li>
+              </ul>
+              <p class="text-sm text-gray-500 italic">For sales pros who want AI to help, not add noise.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Philosophy Section -->
+      <section class="px-6 md:px-12 py-20 md:py-24">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-teal/10 rounded-full mb-8">
+            <svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+            <span class="text-teal font-semibold text-sm">My Philosophy</span>
+          </div>
+          <h2 class="text-navy text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            Smarter, not harder.
+          </h2>
+          <p class="text-gray-600 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-8">
+            I'm not here to pile on more tools, more frameworks, or more complexity. I'm here to help you <span class="text-navy font-semibold">cut through the noise</span>. Whether that's sharpening your pitch so it actually lands, or showing your team which AI workflows actually save time vs. which ones just create busywork.
+          </p>
+          <p class="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
+            No jargon. No 47-slide frameworks. Just clarity.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services/Delivery Section -->
+      <section class="px-6 md:px-12 py-20 md:py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+          <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold text-center mb-4">How We Work Together</p>
+          <h2 class="text-navy text-3xl md:text-4xl font-bold text-center mb-16">
+            Flexible engagement, real results.
+          </h2>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 text-center hover:shadow-lg transition-all duration-300">
+              <div class="w-14 h-14 rounded-xl bg-teal/10 flex items-center justify-center mx-auto mb-5">
+                <svg class="w-7 h-7 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 class="text-navy text-xl font-bold mb-2">Advisory</h3>
+              <p class="text-gray-500 text-xs uppercase tracking-wide mb-3">1:1 Consulting</p>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Personalized guidance on positioning, pitch, and sales strategy. For founders working on clarity, or teams optimizing AI workflows.
+              </p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 text-center hover:shadow-lg transition-all duration-300">
+              <div class="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mx-auto mb-5">
+                <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h3 class="text-navy text-xl font-bold mb-2">Education</h3>
+              <p class="text-gray-500 text-xs uppercase tracking-wide mb-3">Trainings & Presentations</p>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Hands-on workshops on AI best practices, sales efficiency, and practical workflows. For offsites, events, or internal sessions.
+              </p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 text-center hover:shadow-lg transition-all duration-300">
+              <div class="w-14 h-14 rounded-xl bg-navy/10 flex items-center justify-center mx-auto mb-5">
+                <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 class="text-navy text-xl font-bold mb-2">AI Implementation</h3>
+              <p class="text-gray-500 text-xs uppercase tracking-wide mb-3">Strategy & Oversight</p>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Advising on AI tools, setting up ideal workflows, and optimizing sales ops. I guide strategy and oversee execution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="px-6 md:px-12 py-20 md:py-24">
+        <div class="max-w-5xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <!-- Headshot -->
+              <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 border-4 border-white shadow-xl">
+                <img src="/Website Photo.png" alt="Gabrielle Schiavenato" class="w-full h-full object-cover object-[50%_35%] scale-150" width="160" height="160" loading="lazy" />
+              </div>
+              <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold mb-4">About Me</p>
+              <h2 class="text-navy text-3xl md:text-4xl font-bold mb-6">
+                I've been where you are.
+              </h2>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                I'm Gabby, a former top-performing AE who spent years watching smart founders fumble their pitch and sales teams struggle with tools that were supposed to help.
+              </p>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                I've sold B2B SaaS, worked with startups and agencies, closed deals with billion-dollar multinationals, and navigated long, complex sales cycles with some of the largest school districts in the country. I believe in relationship-centered sales: building trust first, closing deals second.
+              </p>
+              <p class="text-gray-600 leading-relaxed">
+                Now I help others cut through the noise. Whether that's helping a founder finally articulate what they do, or showing a sales team which AI tools are actually worth their time, I bridge the gap between knowing your stuff and saying it in a way that lands.
+              </p>
+            </div>
+            <div class="space-y-6">
+              <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
+                <div class="space-y-5">
+                  <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center flex-shrink-0">
+                      <svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-navy font-semibold">Sales + AI Fluency</p>
+                      <p class="text-gray-600 text-sm">Deep sales background meets real AI expertise</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
+                      <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-navy font-semibold">Educator, Not Just Doer</p>
+                      <p class="text-gray-600 text-sm">I teach you, not just do it for you</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-navy/10 flex items-center justify-center flex-shrink-0">
+                      <svg class="w-5 h-5 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-navy font-semibold">Startups to Fortune 500</p>
+                      <p class="text-gray-600 text-sm">Closed deals from seed-stage to multi-billion dollar companies</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Upwork Reviews -->
+              <div class="bg-white/60 rounded-lg border border-gray-100 overflow-hidden">
+                <div class="flex items-center gap-3 px-3 py-2 border-b border-gray-100">
+                  <a href="https://www.upwork.com/freelancers/~01eb0839c54a67ebe5" target="_blank" rel="noopener noreferrer" class="text-[#14A800] font-bold text-sm flex-shrink-0 hover:underline">Upwork</a>
+                  <div class="flex items-center gap-2 text-xs">
+                    <span class="flex items-center gap-1 text-gray-700 font-medium">
+                      <svg class="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                      </svg>
+                      100% Job Success
+                    </span>
+                    <span class="text-gray-300">•</span>
+                    <span class="flex items-center gap-1 text-gray-700 font-medium">
+                      <svg class="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      Top Rated
+                    </span>
+                  </div>
+                </div>
+                <div class="px-3 py-2 space-y-2">
+                  <p class="text-gray-600 text-xs italic leading-relaxed">"An exceptional contractor and true problem-solver... She communicates clearly, works efficiently, and always delivers high-quality results."</p>
+                  <p class="text-gray-600 text-xs italic leading-relaxed">"Amazing to work with! Great attention to detail... The quality of her work exceeded expectations."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="px-6 md:px-12 py-20 md:py-24 bg-gray-50">
+        <div class="max-w-3xl mx-auto">
+          <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold text-center mb-4">FAQ</p>
+          <h2 class="text-navy text-3xl md:text-4xl font-bold text-center mb-12">
+            Common questions.
+          </h2>
+
+          <div class="space-y-4">
+            <!-- FAQ Item 1 -->
+            <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
+              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                <span class="text-navy font-semibold text-lg">What makes you different from other sales consultants?</span>
+                <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+                I combine real sales experience (I've carried a quota and closed deals) with genuine AI expertise. Most AI trainers don't have deep sales backgrounds. Most sales consultants think AI means "have ChatGPT write your emails." I bridge both worlds and focus on what actually works, not what sounds impressive.
+              </div>
+            </details>
+
+            <!-- FAQ Item 2 -->
+            <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
+              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                <span class="text-navy font-semibold text-lg">I'm a founder who's never sold before. Can you help?</span>
+                <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+                Absolutely, this is a big part of what I do. You probably know your product inside and out, but struggle to explain it clearly and concisely. I help you cut through the noise, find your hook, and present your offering in a way that actually resonates with buyers.
+              </div>
+            </details>
+
+            <!-- FAQ Item 3 -->
+            <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
+              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                <span class="text-navy font-semibold text-lg">I see AI mentioned a lot. Is founder work all about AI?</span>
+                <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+                Not at all. For founders and first sales hires, the focus is on sales fundamentals: getting your pitch right, clarifying your positioning, and building a repeatable sales process. AI might come up if it makes sense for your workflow, but it's not the focus. The goal is helping you communicate what you do clearly and close more deals. That's it.
+              </div>
+            </details>
+
+            <!-- FAQ Item 4 -->
+            <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
+              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                <span class="text-navy font-semibold text-lg">What kind of AI training do you offer for sales teams?</span>
+                <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+                I teach teams how to use AI tools (like Claude, ChatGPT, and others) to actually improve their workflow, not just blast generic emails. This includes prompting best practices, workflow audits, and custom prompt libraries your team can use immediately. I'm tool-agnostic and focus on what works for your specific process.
+              </div>
+            </details>
+
+            <!-- FAQ Item 5 -->
+            <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
+              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                <span class="text-navy font-semibold text-lg">How do engagements typically work?</span>
+                <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+                We start with a discovery call to understand your goals and challenges. From there, I'll propose what makes sense: a focused advisory engagement, a team training session, a workshop, or ongoing coaching. I'm flexible and meet you where you are.
+              </div>
+            </details>
+
+            <!-- FAQ Item 6 -->
+            <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
+              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                <span class="text-navy font-semibold text-lg">Do you help with implementation and builds?</span>
+                <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+                Yes. When you need help actually building out workflows, systems, or integrations, I can oversee that work. I partner with trusted implementation specialists to handle execution while I ensure the strategy stays on track. You get the best of both: strategic guidance and hands-on delivery.
+              </div>
+            </details>
+
+            <!-- FAQ Item 7 -->
+            <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
+              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                <span class="text-navy font-semibold text-lg">Why the name TinyGoat?</span>
+                <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+                <p class="mb-4">TinyGoat is named after our pup Santiago, who with his big ears looks like a baby goat. He's our unofficial mascot and chief morale officer.</p>
+                <img src="/Santiago.jpeg" alt="Santiago the TinyGoat" class="w-32 h-32 rounded-2xl object-cover shadow-md" loading="lazy" />
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA / Contact Section -->
+      <section id="contact" class="px-6 md:px-12 py-20 md:py-24">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-navy text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            Let's talk.
+          </h2>
+          <p class="text-gray-600 text-lg mb-10 max-w-xl mx-auto">
+            Whether you need pitch clarity, AI training for your team, or help figuring out what's actually going to move the needle, I'd love to hear what you're working on.
+          </p>
+
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            action="/success.html"
+            class="bg-white rounded-2xl p-8 md:p-10 border border-gray-200 shadow-sm text-left max-w-lg mx-auto"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <div class="mb-5">
+              <label for="name" class="block text-gray-700 font-medium mb-2 text-sm">
+                Your name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-teal focus:ring-1 focus:ring-teal focus:outline-none focus:bg-white transition-all duration-300 text-gray-800 placeholder:text-gray-600"
+              />
+            </div>
+            <div class="mb-5">
+              <label for="email" class="block text-gray-700 font-medium mb-2 text-sm">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@company.com"
+                required
+                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-teal focus:ring-1 focus:ring-teal focus:outline-none focus:bg-white transition-all duration-300 text-gray-800 placeholder:text-gray-600"
+              />
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block text-gray-700 font-medium mb-2 text-sm">
+                What are you working on?
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell me about your business and what you're looking for help with..."
+                rows="4"
+                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-teal focus:ring-1 focus:ring-teal focus:outline-none focus:bg-white transition-all duration-300 text-gray-800 placeholder:text-gray-600 resize-none"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full px-6 py-4 bg-gold text-navy font-bold rounded-full hover:shadow-lg hover:shadow-gold/20 transition-all duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
     </div>
 
     <!-- Footer -->
@@ -444,7 +505,7 @@ import Layout from '../layouts/Layout.astro';
           </a>
         </div>
         <p class="text-gray-600 text-sm">
-          &copy; 2025 TinyGoat. All rights reserved.
+          &copy; 2026 TinyGoat. All rights reserved.
         </p>
       </div>
     </footer>

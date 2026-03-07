@@ -6,7 +6,7 @@ interface Props {
   description?: string;
 }
 
-const { title, description = "TinyGoat helps B2B businesses build sales systems that scale. Strategy, process design, and partnerships for sustainable growth." } = Astro.props;
+const { title, description = "Sales clarity for founders who over-explain. AI efficiency for sales teams drowning in tools. Work smarter, not harder." } = Astro.props;
 
 // Generate canonical URL from current page path
 const canonicalURL = new URL(Astro.url.pathname, 'https://tinygoat.ai').href;
@@ -52,6 +52,9 @@ const fullTitle = `${title} | TinyGoat`;
       rel="stylesheet"
     />
 
+    <!-- Calendly Widget CSS -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+
     <meta name="generator" content={Astro.generator} />
     <title>{fullTitle}</title>
 
@@ -62,16 +65,17 @@ const fullTitle = `${title} | TinyGoat`;
       "name": "TinyGoat",
       "url": "https://tinygoat.ai",
       "logo": "https://tinygoat.ai/tinygoat-logo.png",
-      "description": "Sales operations and growth strategy consulting for B2B businesses.",
+      "description": "Sales clarity for founders and AI efficiency training for sales teams. Helping you work smarter, not harder.",
       "email": "info@tinygoat.ai",
       "sameAs": [
         "https://www.linkedin.com/in/gabrielleschiavenato"
       ],
       "founder": {
         "@type": "Person",
-        "name": "Gabrielle Schiavenato"
+        "name": "Gabrielle Schiavenato",
+        "jobTitle": "Sales Strategy & AI Efficiency Consultant"
       },
-      "serviceType": ["Sales Operations", "Growth Strategy", "Sales Training", "Strategic Partnerships"]
+      "serviceType": ["Sales Strategy Consulting", "Pitch Clarity", "AI for Sales Training", "Sales Process Advisory", "Custom Prompt Development"]
     })} />
 
     <!-- Google Analytics -->
@@ -85,6 +89,9 @@ const fullTitle = `${title} | TinyGoat`;
   </head>
   <body>
     <slot />
+
+    <!-- Calendly Widget -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   </body>
 </html>
 
