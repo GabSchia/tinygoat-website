@@ -4,12 +4,13 @@
   /* TinyGoat Brand Colors */
   --color-navy: #0B3040;
   --color-navy-light: #134055;
-  --color-teal: #00B5B5;
-  --color-gold: #FDC858;
+  --color-teal: #009494;
+  --color-gold: #E5A444;
   --color-off-white: #F8FAFC;
 
-  /* Font Family */
+  /* Font Families */
   --font-family-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-family-serif: 'Fraunces', Georgia, serif;
 
   /* Custom Animations */
   --animate-pulse-slow: pulse-slow 8s ease-in-out infinite;
@@ -21,10 +22,22 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Anchor scroll offset for smooth navigation */
+section[id] {
+  scroll-margin-top: 2rem;
+}
+
 body {
   font-family: var(--font-family-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Premium serif typography for headings */
+h1, h2 {
+  font-family: var(--font-family-serif);
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 /* Custom Keyframes */

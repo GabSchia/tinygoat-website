@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="TinyGoat - Sales Clarity & AI Efficiency" description="Sales clarity for founders who over-explain. AI efficiency for sales teams drowning in tools. Work smarter, not harder.">
+<Layout title="TinyGoat - AI Adoption for Revenue Teams" description="We help sales leaders, RevOps teams, and founders get confident with AI and turn scattered experiments into workflows that actually save time.">
   <main class="min-h-screen bg-white relative overflow-hidden">
     <!-- Subtle Atmospheric Background -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
@@ -24,236 +24,314 @@ import Layout from '../layouts/Layout.astro';
           <a href="#services" class="text-gray-600 hover:text-navy transition-colors text-sm font-medium hidden md:block">Services</a>
           <a href="#about" class="text-gray-600 hover:text-navy transition-colors text-sm font-medium hidden md:block">About</a>
           <a href="#faq" class="text-gray-600 hover:text-navy transition-colors text-sm font-medium hidden md:block">FAQ</a>
-          <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/gabby-tinygoat/30min'});return false;" class="inline-flex items-center px-5 py-2.5 bg-gold text-navy font-semibold text-sm rounded-full hover:shadow-lg hover:shadow-gold/20 transition-all duration-300 cursor-pointer">
-            Get in Touch
+          <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/gabby-tinygoat/30min'});return false;" class="inline-flex items-center px-5 py-2.5 bg-gold text-navy font-semibold text-sm rounded-full hover:shadow-lg hover:shadow-gold/25 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer">
+            Chat with Us
           </button>
         </div>
       </nav>
 
       <!-- Hero Section -->
-      <section class="px-6 md:px-12 py-16 md:py-28 max-w-5xl mx-auto text-center">
-        <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold mb-6">Sales Clarity & AI Efficiency</p>
-        <h1 class="text-navy text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6">
-          You know your stuff.<br class="hidden md:block" /> Let's make sure it lands.
+      <section class="px-6 md:px-12 py-20 md:py-32 max-w-5xl mx-auto text-center">
+        <h1 class="text-navy text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] mb-8">
+          AI won't fix your revenue workflow. Adoption will.
         </h1>
-        <p class="text-gray-600 text-lg md:text-xl mb-10 leading-relaxed max-w-2xl mx-auto">
-          Sales clarity for founders who over-explain. AI education and confidence for sales teams unsure where to start. I help you cut the noise and work smarter, not harder.
+        <p class="text-gray-600 text-lg md:text-xl mb-10 leading-relaxed max-w-3xl mx-auto">
+          We help sales leaders, RevOps teams, and founders get confident with AI and turn scattered experiments into workflows that actually save time.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#services"
-            class="inline-flex items-center justify-center px-8 py-4 bg-gold text-navy font-semibold text-lg rounded-full hover:shadow-lg hover:shadow-gold/20 transition-all duration-300 group"
-          >
-            See How I Help
-            <svg class="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </a>
           <button
             onclick="Calendly.initPopupWidget({url: 'https://calendly.com/gabby-tinygoat/30min'});return false;"
-            class="inline-flex items-center justify-center px-8 py-4 border-2 border-navy text-navy font-semibold text-lg rounded-full hover:bg-navy hover:text-white transition-all duration-300 cursor-pointer"
+            class="inline-flex items-center justify-center px-8 py-4 bg-gold text-navy font-semibold text-lg rounded-full hover:shadow-lg hover:shadow-gold/25 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
           >
-            Book a Call
+            Book a Discovery Call
           </button>
+          <a
+            href="#how-we-work"
+            class="inline-flex items-center justify-center px-8 py-4 border-2 border-navy text-navy font-semibold text-lg rounded-full hover:bg-navy hover:text-white transition-all duration-300"
+          >
+            See How We Work
+          </a>
         </div>
       </section>
 
-      <!-- Two Paths Section -->
-      <section id="services" class="px-6 md:px-12 py-20 md:py-24 bg-gray-50">
+      <!-- Problems We Solve Section -->
+      <section id="problems" class="px-6 md:px-12 py-24 md:py-32 bg-gray-50">
         <div class="max-w-6xl mx-auto">
-          <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold text-center mb-4">Who I Help</p>
           <h2 class="text-navy text-3xl md:text-4xl font-bold text-center mb-6">
-            Two paths. One goal: clarity.
+            Sound familiar?
           </h2>
           <p class="text-gray-600 text-center text-lg mb-16 max-w-2xl mx-auto">
-            Whether you're a founder learning to pitch or a sales team figuring out AI, I meet you where you are.
+            Leadership says "adopt AI." Your team nods, opens ChatGPT twice, and goes back to doing everything manually.
           </p>
 
-          <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
-            <!-- Path 1: Founders -->
-            <div class="bg-white border border-gray-200 rounded-2xl p-8 md:p-10 hover:shadow-xl hover:border-teal/30 transition-all duration-300">
-              <div class="w-14 h-14 rounded-xl bg-teal/10 flex items-center justify-center mb-6">
-                <svg class="w-7 h-7 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 class="text-navy text-2xl font-bold mb-4">For Founders & First Sales Hires</h3>
-              <p class="text-gray-600 leading-relaxed mb-6">
-                You're the expert, but the pitch is too long, too vague, or buried in detail. You don't need sales training. You need someone to help you <span class="font-semibold text-navy">cut the fluff and get direct</span>.
+          <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-12">
+            <!-- Problem Card 1 -->
+            <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+              <h3 class="text-navy text-xl font-bold mb-3">The mandate without the map</h3>
+              <p class="text-gray-600 leading-relaxed">
+                The board or exec team wants AI in every workflow. But nobody's defined which workflows, which tools, or what "adoption" even looks like. So the team stalls.
               </p>
-              <ul class="space-y-3 mb-8">
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-gray-700">Pitch clarity & positioning</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-gray-700">Go-to-market strategy</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-gray-700">Sales process setup</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-gray-700">1:1 advisory & coaching</span>
-                </li>
-              </ul>
-              <p class="text-sm text-gray-500 italic">For founders who know their product but can't quite land the pitch.</p>
             </div>
 
-            <!-- Path 2: Sales Teams -->
-            <div class="bg-white border border-gray-200 rounded-2xl p-8 md:p-10 hover:shadow-xl hover:border-gold/30 transition-all duration-300">
-              <div class="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-6">
-                <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <h3 class="text-navy text-2xl font-bold mb-4">For Sales Teams & Leaders</h3>
-              <p class="text-gray-600 leading-relaxed mb-6">
-                You believe in relationship-centered sales. You have tools, but it's either "just use ChatGPT for emails" or you're overwhelmed by everything leadership keeps adding to your stack. There's a middle ground where AI <span class="font-semibold text-navy">actually makes you faster</span> without adding complexity.
+            <!-- Problem Card 2 -->
+            <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+              <h3 class="text-navy text-xl font-bold mb-3">Tool overload</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Your team has been handed 4 different AI tools in the last 6 months. Nobody uses any of them consistently. The stack grows. The manual work stays the same.
               </p>
-              <ul class="space-y-3 mb-8">
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-gray-700">AI for Sales workshops & trainings</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-gray-700">Custom prompt libraries</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-gray-700">Workflow audits & recommendations</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span class="text-gray-700">Team presentations</span>
-                </li>
-              </ul>
-              <p class="text-sm text-gray-500 italic">For sales pros who want AI to help, not add noise.</p>
             </div>
+
+            <!-- Problem Card 3 -->
+            <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+              <h3 class="text-navy text-xl font-bold mb-3">Experimentation without adoption</h3>
+              <p class="text-gray-600 leading-relaxed">
+                A few reps tried using AI for outreach or research. Some of it worked. None of it became a repeatable process. There's no system, just scattered experiments.
+              </p>
+            </div>
+
+            <!-- Problem Card 4 -->
+            <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+              <h3 class="text-navy text-xl font-bold mb-3">The productivity gap</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Your team still spends 30–40% of their day on prospect research, CRM updates, pipeline hygiene, and reporting. AI could cut that in half. It hasn't, because nobody's built the workflows.
+              </p>
+            </div>
+          </div>
+
+          <p class="text-navy text-xl font-semibold text-center mb-8">
+            These aren't AI problems. They're adoption problems. That's what we solve.
+          </p>
+
+          <div class="text-center">
+            <button
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/gabby-tinygoat/30min'});return false;"
+              class="inline-flex items-center justify-center px-6 py-3 bg-gold text-navy font-semibold rounded-full hover:shadow-lg hover:shadow-gold/25 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
+            >
+              Sound like your team? Let's talk.
+            </button>
           </div>
         </div>
       </section>
 
-      <!-- Philosophy Section -->
-      <section class="px-6 md:px-12 py-20 md:py-24">
-        <div class="max-w-4xl mx-auto text-center">
-          <div class="inline-flex items-center gap-2 px-4 py-2 bg-teal/10 rounded-full mb-8">
-            <svg class="w-5 h-5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
-            <span class="text-teal font-semibold text-sm">My Philosophy</span>
-          </div>
-          <h2 class="text-navy text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Smarter, not harder.
-          </h2>
-          <p class="text-gray-600 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-8">
-            I'm not here to pile on more tools, more frameworks, or more complexity. I'm here to help you <span class="text-navy font-semibold">cut through the noise</span>. Whether that's sharpening your pitch so it actually lands, or showing your team which AI workflows actually save time vs. which ones just create busywork.
-          </p>
-          <p class="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
-            No jargon. No 47-slide frameworks. Just clarity.
-          </p>
-        </div>
-      </section>
-
-      <!-- Services/Delivery Section -->
-      <section class="px-6 md:px-12 py-20 md:py-24 bg-gray-50">
+      <!-- Services Section -->
+      <section id="services" class="px-6 md:px-12 py-24 md:py-32">
         <div class="max-w-6xl mx-auto">
-          <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold text-center mb-4">How We Work Together</p>
           <h2 class="text-navy text-3xl md:text-4xl font-bold text-center mb-16">
-            Flexible engagement, real results.
+            Three ways we work with revenue teams.
           </h2>
 
-          <div class="grid md:grid-cols-3 gap-8">
-            <!-- Service 1 -->
-            <div class="bg-white border border-gray-200 rounded-2xl p-8 text-center hover:shadow-lg transition-all duration-300">
-              <div class="w-14 h-14 rounded-xl bg-teal/10 flex items-center justify-center mx-auto mb-5">
-                <svg class="w-7 h-7 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
+          <div class="space-y-12">
+            <!-- Service 1: AI Assessment -->
+            <div class="bg-white border border-gray-100 rounded-2xl p-8 md:p-10 shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center">
+                  <svg class="w-6 h-6 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                  </svg>
+                </div>
+                <h3 class="text-navy text-2xl font-bold">AI Assessment</h3>
               </div>
-              <h3 class="text-navy text-xl font-bold mb-2">Advisory</h3>
-              <p class="text-gray-500 text-xs uppercase tracking-wide mb-3">1:1 Consulting</p>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                Personalized guidance on positioning, pitch, and sales strategy. For founders working on clarity, or teams optimizing AI workflows.
+              <p class="text-teal font-semibold mb-4">Find out where AI actually moves the needle.</p>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                We evaluate your current revenue workflows (prospecting, outreach, CRM, pipeline management, reporting) and identify where AI can realistically reduce manual work and improve efficiency. No vendor pitches. No theoretical frameworks. Just a clear-eyed assessment of what's worth building.
+              </p>
+              <p class="text-navy font-semibold mb-3">You walk away with:</p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">An AI opportunity map for your revenue workflow</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Tool and process recommendations tailored to your stack</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">A prioritized implementation roadmap your team can actually execute</span>
+                </li>
+              </ul>
+              <p class="text-gray-500 text-sm italic">Best for: Sales leaders or RevOps teams who know they should be using AI but aren't sure where to start.</p>
+            </div>
+
+            <!-- Service 2: AI Training -->
+            <div class="bg-white border border-gray-100 rounded-2xl p-8 md:p-10 shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center">
+                  <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <h3 class="text-navy text-2xl font-bold">AI Training</h3>
+              </div>
+              <p class="text-gold font-semibold mb-4">Get your team confident, not just curious.</p>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                Hands-on workshops and training sessions that teach your revenue team how to use AI tools in their actual daily work. Not in theory, not in a demo environment. We cover prompting, prospecting workflows, research automation, and communication, calibrated to what your team actually does.
+              </p>
+              <p class="text-navy font-semibold mb-3">Formats include:</p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Team workshops (virtual or onsite)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Sales kickoff or offsite sessions</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Ongoing enablement for managers and reps</span>
+                </li>
+              </ul>
+              <p class="text-gray-500 text-sm italic">Best for: Sales teams and managers who've been told to "use AI" but haven't been shown how.</p>
+            </div>
+
+            <!-- Service 3: AI Implementation -->
+            <div class="bg-white border border-gray-100 rounded-2xl p-8 md:p-10 shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-12 h-12 rounded-xl bg-navy/10 flex items-center justify-center">
+                  <svg class="w-6 h-6 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <h3 class="text-navy text-2xl font-bold">AI Implementation</h3>
+              </div>
+              <p class="text-navy font-semibold mb-4">Build the systems your team will actually use.</p>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                We design and implement practical AI workflows that plug into your existing revenue operations. This isn't a science project. Every system we build is designed to reduce manual work and be usable by real salespeople on day one.
+              </p>
+              <p class="text-navy font-semibold mb-3">Examples:</p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-navy flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">AI-assisted prospect research workflows</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-navy flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">CRM automation and pipeline hygiene</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-navy flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Internal sales enablement systems</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-navy flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-gray-700">Outbound and communication workflows</span>
+                </li>
+              </ul>
+              <p class="text-gray-500 text-sm italic">Best for: Teams ready to move beyond experimentation and operationalize AI across the revenue process.</p>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <button
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/gabby-tinygoat/30min'});return false;"
+              class="inline-flex items-center justify-center px-6 py-3 bg-gold text-navy font-semibold rounded-full hover:shadow-lg hover:shadow-gold/25 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
+            >
+              Not sure which service fits? Start with a discovery call.
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- How We Work Section -->
+      <section id="how-we-work" class="px-6 md:px-12 py-24 md:py-32 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-navy text-3xl md:text-4xl font-bold text-center mb-16">
+            How we work.
+          </h2>
+
+          <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <!-- Step 1 -->
+            <div class="text-center">
+              <div class="w-16 h-16 rounded-full bg-teal/10 flex items-center justify-center mx-auto mb-6">
+                <span class="text-teal text-2xl font-bold">1</span>
+              </div>
+              <h3 class="text-navy text-xl font-bold mb-4">Assess</h3>
+              <p class="text-gray-600 leading-relaxed">
+                We start by understanding your current revenue workflows, your team's tools, and where the manual bottlenecks are. No assumptions. No prescriptions until we've seen the real picture.
               </p>
             </div>
 
-            <!-- Service 2 -->
-            <div class="bg-white border border-gray-200 rounded-2xl p-8 text-center hover:shadow-lg transition-all duration-300">
-              <div class="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mx-auto mb-5">
-                <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
+            <!-- Step 2 -->
+            <div class="text-center">
+              <div class="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6">
+                <span class="text-gold text-2xl font-bold">2</span>
               </div>
-              <h3 class="text-navy text-xl font-bold mb-2">Education</h3>
-              <p class="text-gray-500 text-xs uppercase tracking-wide mb-3">Trainings & Presentations</p>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                Hands-on workshops on AI best practices, sales efficiency, and practical workflows. For offsites, events, or internal sessions.
+              <h3 class="text-navy text-xl font-bold mb-4">Train</h3>
+              <p class="text-gray-600 leading-relaxed">
+                We get your team up to speed on the AI tools and workflows that are relevant to their work. Not a generic "intro to AI" session. Practical, role-specific, and immediately applicable.
               </p>
             </div>
 
-            <!-- Service 3 -->
-            <div class="bg-white border border-gray-200 rounded-2xl p-8 text-center hover:shadow-lg transition-all duration-300">
-              <div class="w-14 h-14 rounded-xl bg-navy/10 flex items-center justify-center mx-auto mb-5">
-                <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
+            <!-- Step 3 -->
+            <div class="text-center">
+              <div class="w-16 h-16 rounded-full bg-navy/10 flex items-center justify-center mx-auto mb-6">
+                <span class="text-navy text-2xl font-bold">3</span>
               </div>
-              <h3 class="text-navy text-xl font-bold mb-2">AI Implementation</h3>
-              <p class="text-gray-500 text-xs uppercase tracking-wide mb-3">Strategy & Oversight</p>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                Advising on AI tools, setting up ideal workflows, and optimizing sales ops. I guide strategy and oversee execution.
+              <h3 class="text-navy text-xl font-bold mb-4">Implement</h3>
+              <p class="text-gray-600 leading-relaxed">
+                We build the workflows, automations, and systems that make AI part of how your team actually operates, not just something they tried once in a workshop.
               </p>
             </div>
           </div>
+
+          <p class="text-gray-600 text-center text-lg max-w-3xl mx-auto">
+            Every engagement is scoped to your team. Some clients need all three. Some need one. We figure that out together on the discovery call.
+          </p>
         </div>
       </section>
 
       <!-- About Section -->
-      <section id="about" class="px-6 md:px-12 py-20 md:py-24">
+      <section id="about" class="px-6 md:px-12 py-24 md:py-32">
         <div class="max-w-5xl mx-auto">
-          <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="grid md:grid-cols-2 gap-12 items-start">
             <div>
               <!-- Headshot -->
               <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 border-4 border-white shadow-xl">
                 <img src="/Website Photo.png" alt="Gabrielle Schiavenato" class="w-full h-full object-cover object-[50%_35%] scale-150" width="160" height="160" loading="lazy" />
               </div>
-              <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold mb-4">About Me</p>
               <h2 class="text-navy text-3xl md:text-4xl font-bold mb-6">
-                I've been where you are.
+                Built by someone who's carried a quota.
               </h2>
-              <p class="text-gray-600 leading-relaxed mb-6">
-                I'm Gabby, a former top-performing AE who spent years watching smart founders fumble their pitch and sales teams struggle with tools that were supposed to help.
-              </p>
-              <p class="text-gray-600 leading-relaxed mb-6">
-                I've sold B2B SaaS, worked with startups and agencies, closed deals with billion-dollar multinationals, and navigated long, complex sales cycles with some of the largest school districts in the country. I believe in relationship-centered sales: building trust first, closing deals second.
-              </p>
-              <p class="text-gray-600 leading-relaxed">
-                Now I help others cut through the noise. Whether that's helping a founder finally articulate what they do, or showing a sales team which AI tools are actually worth their time, I bridge the gap between knowing your stuff and saying it in a way that lands.
-              </p>
+              <div class="text-gray-600 leading-relaxed space-y-4">
+                <p>
+                  Most AI consultants come from engineering or operations. They understand the technology. They don't understand sales organizations.
+                </p>
+                <p>
+                  I'm Gabby. I spent years as a top-performing AE selling B2B, closing deals with startups, agencies, and billion-dollar multinationals. I've run complex full sales cycles from cold outreach to account management, built sales processes from scratch, and worked inside the exact kind of revenue teams I now consult for.
+                </p>
+                <p>
+                  That background is the reason TinyGoat exists. When I started helping companies adopt AI, I kept seeing the same pattern: smart tools built by people who'd never sat across from a buyer, implemented by people who'd never managed a pipeline. The technology was fine. The adoption failed because nobody understood how salespeople actually work.
+                </p>
+                <p>
+                  TinyGoat bridges that gap. I know which workflows actually eat your team's time. I know which AI tools reps will actually use versus which ones become shelfware. And I know the difference between a system that looks impressive in a demo and one that survives first contact with a real sales week.
+                </p>
+              </div>
             </div>
             <div class="space-y-6">
-              <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
+              <!-- Proof Point Badges -->
+              <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
                 <div class="space-y-5">
                   <div class="flex items-start gap-4">
                     <div class="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center flex-shrink-0">
@@ -263,7 +341,7 @@ import Layout from '../layouts/Layout.astro';
                     </div>
                     <div>
                       <p class="text-navy font-semibold">Sales + AI Fluency</p>
-                      <p class="text-gray-600 text-sm">Deep sales background meets real AI expertise</p>
+                      <p class="text-gray-600 text-sm">Deep quota-carrying experience meets real AI expertise</p>
                     </div>
                   </div>
                   <div class="flex items-start gap-4">
@@ -273,8 +351,8 @@ import Layout from '../layouts/Layout.astro';
                       </svg>
                     </div>
                     <div>
-                      <p class="text-navy font-semibold">Educator, Not Just Doer</p>
-                      <p class="text-gray-600 text-sm">I teach you, not just do it for you</p>
+                      <p class="text-navy font-semibold">Educator, Not Just Implementer</p>
+                      <p class="text-gray-600 text-sm">I train your team to own it, not depend on me</p>
                     </div>
                   </div>
                   <div class="flex items-start gap-4">
@@ -284,8 +362,8 @@ import Layout from '../layouts/Layout.astro';
                       </svg>
                     </div>
                     <div>
-                      <p class="text-navy font-semibold">Startups to Fortune 500</p>
-                      <p class="text-gray-600 text-sm">Closed deals from seed-stage to multi-billion dollar companies</p>
+                      <p class="text-navy font-semibold">Startup to Enterprise</p>
+                      <p class="text-gray-600 text-sm">Closed deals from seed-stage companies to Fortune 500 accounts</p>
                     </div>
                   </div>
                 </div>
@@ -322,68 +400,67 @@ import Layout from '../layouts/Layout.astro';
       </section>
 
       <!-- FAQ Section -->
-      <section id="faq" class="px-6 md:px-12 py-20 md:py-24 bg-gray-50">
+      <section id="faq" class="px-6 md:px-12 py-24 md:py-32 bg-gray-50">
         <div class="max-w-3xl mx-auto">
-          <p class="text-teal uppercase tracking-[0.2em] text-sm font-semibold text-center mb-4">FAQ</p>
           <h2 class="text-navy text-3xl md:text-4xl font-bold text-center mb-12">
             Common questions.
           </h2>
 
           <div class="space-y-4">
             <!-- FAQ Item 1 -->
-            <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
+            <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
               <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-                <span class="text-navy font-semibold text-lg">What makes you different from other sales consultants?</span>
+                <span class="text-navy font-semibold text-lg">What makes TinyGoat different from other AI consultants?</span>
                 <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
               <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-                I combine real sales experience (I've carried a quota and closed deals) with genuine AI expertise. Most AI trainers don't have deep sales backgrounds. Most sales consultants think AI means "have ChatGPT write your emails." I bridge both worlds and focus on what actually works, not what sounds impressive.
+                Most AI consultants come from engineering. They know the tools but don't understand how sales teams actually work. I've carried a quota, managed a pipeline, and closed enterprise deals. That means the AI workflows I build are designed for how salespeople actually operate, not how a demo makes it look.
               </div>
             </details>
 
             <!-- FAQ Item 2 -->
-            <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
+            <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
               <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-                <span class="text-navy font-semibold text-lg">I'm a founder who's never sold before. Can you help?</span>
+                <span class="text-navy font-semibold text-lg">We already use ChatGPT. Why do we need help?</span>
                 <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
               <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-                Absolutely, this is a big part of what I do. You probably know your product inside and out, but struggle to explain it clearly and concisely. I help you cut through the noise, find your hook, and present your offering in a way that actually resonates with buyers.
+                Having access to AI tools isn't the same as adopting AI. Most teams use ChatGPT sporadically for one-off tasks. We help you build repeatable workflows that reduce manual work across prospecting, CRM management, pipeline updates, and reporting. AI becomes part of how your team operates, not just something they open occasionally.
               </div>
             </details>
 
             <!-- FAQ Item 3 -->
-            <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
+            <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
               <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-                <span class="text-navy font-semibold text-lg">I see AI mentioned a lot. Is founder work all about AI?</span>
+                <span class="text-navy font-semibold text-lg">What kind of AI training do you offer?</span>
                 <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
               <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-                Not at all. For founders and first sales hires, the focus is on sales fundamentals: getting your pitch right, clarifying your positioning, and building a repeatable sales process. AI might come up if it makes sense for your workflow, but it's not the focus. The goal is helping you communicate what you do clearly and close more deals. That's it.
+                Hands-on workshops calibrated to your team's actual workflows. We cover prompting, prospect research, outreach efficiency, and CRM automation. No generic "intro to AI" presentations. Everything is role-specific and immediately applicable.
               </div>
             </details>
 
             <!-- FAQ Item 4 -->
-            <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
+            <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
               <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-                <span class="text-navy font-semibold text-lg">What kind of AI training do you offer for sales teams?</span>
+                <span class="text-navy font-semibold text-lg">Do you sell or recommend specific AI tools?</span>
                 <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
               <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-                I teach teams how to use AI tools (like Claude, ChatGPT, and others) to actually improve their workflow, not just blast generic emails. This includes prompting best practices, workflow audits, and custom prompt libraries your team can use immediately. I'm tool-agnostic and focus on what works for your specific process.
+                No. We're tool-agnostic. We recommend what fits your existing stack and your team's actual needs. The goal is adoption, not adding more software to the pile.
               </div>
             </details>
 
             <!-- FAQ Item 5 -->
-            <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
+            <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
               <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
                 <span class="text-navy font-semibold text-lg">How do engagements typically work?</span>
                 <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -391,25 +468,12 @@ import Layout from '../layouts/Layout.astro';
                 </svg>
               </summary>
               <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-                We start with a discovery call to understand your goals and challenges. From there, I'll propose what makes sense: a focused advisory engagement, a team training session, a workshop, or ongoing coaching. I'm flexible and meet you where you are.
+                We start with a discovery call to understand your workflows and goals. From there, we scope what makes sense: an assessment, training, implementation, or some combination. Every engagement is tailored. No cookie-cutter packages.
               </div>
             </details>
 
             <!-- FAQ Item 6 -->
-            <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
-              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-                <span class="text-navy font-semibold text-lg">Do you help with implementation and builds?</span>
-                <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                </svg>
-              </summary>
-              <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-                Yes. When you need help actually building out workflows, systems, or integrations, I can oversee that work. I partner with trusted implementation specialists to handle execution while I ensure the strategy stays on track. You get the best of both: strategic guidance and hands-on delivery.
-              </div>
-            </details>
-
-            <!-- FAQ Item 7 -->
-            <details class="group bg-white rounded-2xl border border-gray-200 shadow-sm">
+            <details class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
               <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
                 <span class="text-navy font-semibold text-lg">Why the name TinyGoat?</span>
                 <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -417,7 +481,7 @@ import Layout from '../layouts/Layout.astro';
                 </svg>
               </summary>
               <div class="px-6 pb-6 text-gray-600 leading-relaxed">
-                <p class="mb-4">TinyGoat is named after our pup Santiago, who with his big ears looks like a baby goat. He's our unofficial mascot and chief morale officer.</p>
+                <p class="mb-4">Named after our pup Santiago, who with his big ears looks like a baby goat. He's the unofficial mascot and chief morale officer.</p>
                 <img src="/Santiago.jpeg" alt="Santiago the TinyGoat" class="w-32 h-32 rounded-2xl object-cover shadow-md" loading="lazy" />
               </div>
             </details>
@@ -425,69 +489,24 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </section>
 
-      <!-- CTA / Contact Section -->
-      <section id="contact" class="px-6 md:px-12 py-20 md:py-24">
+      <!-- Final CTA Section -->
+      <section class="px-6 md:px-12 py-24 md:py-32">
         <div class="max-w-3xl mx-auto text-center">
           <h2 class="text-navy text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Let's talk.
           </h2>
           <p class="text-gray-600 text-lg mb-10 max-w-xl mx-auto">
-            Whether you need pitch clarity, AI training for your team, or help figuring out what's actually going to move the needle, I'd love to hear what you're working on.
+            Whether you need an AI assessment, team training, or help building workflows that actually stick, it starts with a conversation.
           </p>
-
-          <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            action="/success.html"
-            class="bg-white rounded-2xl p-8 md:p-10 border border-gray-200 shadow-sm text-left max-w-lg mx-auto"
+          <button
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/gabby-tinygoat/30min'});return false;"
+            class="inline-flex items-center justify-center px-8 py-4 bg-gold text-navy font-bold text-lg rounded-full hover:shadow-lg hover:shadow-gold/25 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
           >
-            <input type="hidden" name="form-name" value="contact" />
-            <div class="mb-5">
-              <label for="name" class="block text-gray-700 font-medium mb-2 text-sm">
-                Your name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your name"
-                required
-                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-teal focus:ring-1 focus:ring-teal focus:outline-none focus:bg-white transition-all duration-300 text-gray-800 placeholder:text-gray-600"
-              />
-            </div>
-            <div class="mb-5">
-              <label for="email" class="block text-gray-700 font-medium mb-2 text-sm">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="you@company.com"
-                required
-                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-teal focus:ring-1 focus:ring-teal focus:outline-none focus:bg-white transition-all duration-300 text-gray-800 placeholder:text-gray-600"
-              />
-            </div>
-            <div class="mb-6">
-              <label for="message" class="block text-gray-700 font-medium mb-2 text-sm">
-                What are you working on?
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Tell me about your business and what you're looking for help with..."
-                rows="4"
-                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-teal focus:ring-1 focus:ring-teal focus:outline-none focus:bg-white transition-all duration-300 text-gray-800 placeholder:text-gray-600 resize-none"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              class="w-full px-6 py-4 bg-gold text-navy font-bold rounded-full hover:shadow-lg hover:shadow-gold/20 transition-all duration-300"
-            >
-              Send Message
-            </button>
-          </form>
+            Book a Discovery Call
+          </button>
+          <p class="text-gray-500 text-sm mt-6">
+            Prefer email? Reach us at <a href="mailto:info@tinygoat.ai" class="text-teal hover:underline">info@tinygoat.ai</a>
+          </p>
         </div>
       </section>
     </div>
