@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  /* TinyGoat Brand Colors */
-  --color-navy: #0B3040;
-  --color-navy-light: #134055;
-  --color-teal: #009494;
-  --color-gold: #E5A444;
+  /* TinyGoat Brand Colors - Matched to Logo */
+  --color-navy: #0B3C49;
+  --color-navy-light: #124956;
+  --color-teal: #2A9D8F;
+  --color-gold: #F9C74F;
   --color-off-white: #F8FAFC;
 
   /* Font Families */
