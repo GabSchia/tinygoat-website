@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Meet TinyGoat | Claude AI Consulting Built by a Former Sales Leader" rawTitle={true} description="TinyGoat is built by a former top-performing AE and educator who understands both why AI adoption fails and how to train people so it actually sticks.">
+  <main class="min-h-screen bg-white relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] bg-teal/5 rounded-full blur-[150px]"></div>
+      <div class="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-gold/5 rounded-full blur-[120px]"></div>
+    </div>
+    <div class="fixed inset-0 pointer-events-none opacity-[0.03] mix-blend-multiply" style="background-image: url('/noise.png'); background-repeat: repeat;"></div>
+
+    <div class="relative z-10">
+      <Nav />
+
+      <!-- Page Header -->
+      <section class="px-6 md:px-12 py-20 md:py-28 max-w-5xl mx-auto text-center">
+        <h1 class="text-navy text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.05]">
+          Meet the Team.
+        </h1>
+      </section>
+
+      <!-- Gabby's Bio -->
+      <section class="px-6 md:px-12 py-16 md:py-24 bg-gray-50">
+        <div class="max-w-5xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div>
+              <div class="rounded-2xl overflow-hidden shadow-lg mb-4">
+                <img src="/Meandsanti.jpeg" alt="Gabby and Santiago" class="w-full h-auto" loading="lazy" />
+              </div>
+              <p class="text-gray-500 text-sm italic">Team Photo — Gabby and Santi, the TinyGoat</p>
+            </div>
+            <div>
+              <h2 class="text-navy text-3xl md:text-4xl font-bold mb-2">Gabby Schiavenato</h2>
+              <p class="text-teal font-semibold mb-6">Founder, TinyGoat</p>
+
+              <div class="text-gray-600 leading-relaxed space-y-4">
+                <p>Most AI consultants come from engineering or operations. They understand the technology. They do not understand sales organizations.</p>
+                <p>I'm Gabby. I spent years as a top-performing AE selling B2B for SaaS startups, agencies, and professional services. As an educator, I also sold to the hardest crowd -- math to 5th graders. I've run complex full sales cycles from cold outreach to account management, built sales processes from scratch, and worked inside the exact kind of revenue teams I now consult for.</p>
+                <p>That experience is why I built TinyGoat. Revenue teams are moving fast, heads down, and AI is changing everything around them. I've done the work to understand what Claude can actually do for teams like yours so you do not have to figure it out alone.</p>
+              </div>
+
+              <!-- Testimonials -->
+              <div class="mt-8 space-y-4">
+                <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+                  <p class="text-gray-600 italic leading-relaxed">"An exceptional contractor and true problem-solver... She communicates clearly, works efficiently, and always delivers high-quality results."</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+                  <p class="text-gray-600 italic leading-relaxed">"Amazing to work with! Great attention to detail... The quality of her work exceeded expectations."</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Santiago's Bio -->
+          <div class="mt-8">
+            <h2 class="text-navy text-3xl md:text-4xl font-bold mb-2">Santiago</h2>
+            <p class="text-teal font-semibold mb-6">Chief Morale Officer and Head of Security, TinyGoat</p>
+            <p class="text-gray-600 text-lg leading-relaxed max-w-3xl">
+              Santiago joined TinyGoat on day one and has not missed a single Zoom call since. His responsibilities include keeping morale high, alerting the team to suspicious activity outside the window, and making sure no one works through lunch. He has strong opinions about squirrels and is available for select client appearances.
+            </p>
+          </div>
+
+          <!-- LinkedIn -->
+          <div class="mt-12">
+            <a href="https://www.linkedin.com/in/gabrielleschiavenato" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-[#0A66C2] hover:underline font-medium text-sm">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              Follow us on LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Closing CTA -->
+      <section class="px-6 md:px-12 py-24 md:py-32">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-navy text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Ready to move from access to adoption?</h2>
+          <a href="/#contact" class="inline-flex items-center justify-center px-8 py-4 bg-gold text-navy font-bold text-lg rounded-full hover:shadow-lg hover:shadow-gold/25 hover:-translate-y-0.5 transition-all duration-300">
+            Book a Call
+          </a>
+          <p class="text-gray-500 text-sm mt-6">
+            Prefer email? <a href="mailto:info@tinygoat.ai" class="text-teal hover:underline">info@tinygoat.ai</a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <Footer />
+  </main>
+</Layout>

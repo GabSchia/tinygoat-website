@@ -1,0 +1,94 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="TinyGoat | Claude Implementation Pricing for Sales Teams" rawTitle={true} description="Transparent pricing for TinyGoat's Claude implementation and focused session offerings for revenue teams.">
+  <main class="min-h-screen bg-white relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] bg-teal/5 rounded-full blur-[150px]"></div>
+      <div class="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-gold/5 rounded-full blur-[120px]"></div>
+    </div>
+    <div class="fixed inset-0 pointer-events-none opacity-[0.03] mix-blend-multiply" style="background-image: url('/noise.png'); background-repeat: repeat;"></div>
+
+    <div class="relative z-10">
+      <Nav />
+
+      <!-- Page Header -->
+      <section class="px-6 md:px-12 pt-20 md:pt-28 pb-8 max-w-5xl mx-auto text-center">
+        <h1 class="text-navy text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.05] mb-6">
+          Investment
+        </h1>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">Every engagement is scoped to what your team actually needs. Here is where things start.</p>
+      </section>
+
+      <!-- Pricing Cards -->
+      <section class="px-6 md:px-12 py-16 md:py-24">
+        <div class="max-w-5xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-navy rounded-2xl p-8 shadow-lg">
+              <h3 class="mb-6"><span class="text-xl font-bold block text-white">Built to Roam</span><span class="text-base italic text-gray-300">The Full TinyGoat Implementation</span></h3>
+              <div class="space-y-4 mb-6">
+                <div class="flex justify-between items-baseline">
+                  <span class="text-gray-300">Project pricing</span>
+                  <span class="text-white font-bold">Starting at $15,000</span>
+                </div>
+                <div class="border-t border-white/10"></div>
+                <div class="flex justify-between items-baseline">
+                  <span class="text-gray-300"><em class="font-bold">Roam</em>&nbsp;&nbsp;&nbsp;retainer</span>
+                  <span class="text-white font-bold">Starting at $3,000/mo</span>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm">Scoped based on team size and complexity. Multi-team engagements are priced per workstream with discounts applied.</p>
+            </div>
+
+            <div class="bg-teal rounded-2xl p-8 shadow-lg">
+              <h3 class="mb-6"><span class="text-xl font-bold block text-white">On the Trail</span><span class="text-base italic text-white/70">Targeted Support from TinyGoat</span></h3>
+              <div class="space-y-4 mb-6">
+                <div class="flex justify-between items-baseline">
+                  <span class="text-white/80">Strategy calls</span>
+                  <span class="text-white font-bold">Starting at $750</span>
+                </div>
+                <div class="border-t border-white/15"></div>
+                <div class="flex justify-between items-baseline">
+                  <span class="text-white/80">Trainings and workshops</span>
+                  <span class="text-white font-bold">Starting at $1,200</span>
+                </div>
+                <div class="border-t border-white/15"></div>
+                <div class="flex justify-between items-baseline">
+                  <span class="text-white/80">Presentations and keynotes</span>
+                  <span class="text-white font-bold">Starting at $2,100</span>
+                </div>
+              </div>
+              <p class="text-white/60 text-sm">Scoped based on format and length. Reach out and we will figure out what fits.</p>
+            </div>
+          </div>
+
+          <div class="text-center mt-10">
+            <a
+              href="/how-we-work"
+              class="inline-flex items-center justify-center px-8 py-4 bg-gold text-navy font-semibold text-lg rounded-full hover:shadow-lg hover:shadow-gold/25 hover:-translate-y-0.5 transition-all duration-300"
+            >
+              Learn More About How We Work
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Embedded Calendly -->
+      <section class="px-6 md:px-12 py-16 md:py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto text-center">
+          <h2 class="text-navy text-3xl md:text-4xl font-bold mb-4">Ready to figure out what fits?</h2>
+          <p class="text-gray-600 text-lg mb-10">Pick a time that works and we will go from there.</p>
+          <div class="calendly-inline-widget" data-url="https://calendly.com/gabby-tinygoat/30min?hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+          <p class="text-gray-500 text-sm mt-6">
+            Prefer email? <a href="mailto:info@tinygoat.ai" class="text-teal hover:underline">info@tinygoat.ai</a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <Footer />
+  </main>
+</Layout>

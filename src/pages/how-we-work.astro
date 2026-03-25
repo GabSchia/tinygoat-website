@@ -1,0 +1,292 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="TinyGoat | How We Work With Revenue Teams" rawTitle={true} description="Full Claude implementation for revenue orgs or focused sessions for specific needs. TinyGoat works with high-growth B2B companies on AI adoption that actually sticks.">
+  <main class="min-h-screen bg-white relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] bg-teal/5 rounded-full blur-[150px]"></div>
+      <div class="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-gold/5 rounded-full blur-[120px]"></div>
+    </div>
+    <div class="fixed inset-0 pointer-events-none opacity-[0.03] mix-blend-multiply" style="background-image: url('/noise.png'); background-repeat: repeat;"></div>
+
+    <div class="relative z-10">
+      <Nav />
+
+      <!-- PART 1: Page Header -->
+      <section class="px-6 md:px-12 pt-20 md:pt-28 pb-8 max-w-5xl mx-auto text-center">
+        <h1 class="text-navy text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.05]">
+          How TinyGoat Works With Teams
+        </h1>
+      </section>
+
+      <!-- PART 2: Outcome Statement -->
+      <section class="px-6 md:px-12 pb-12 md:pb-16">
+        <p class="text-gray-600 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto text-center">
+          Your team on the other side of this looks different. Claude is part of how they work, not something they occasionally open.
+        </p>
+      </section>
+
+      <!-- PART 3: Tab Bar and Content -->
+      <section class="px-6 md:px-12 py-8 md:py-12">
+        <div class="max-w-5xl mx-auto">
+          <!-- Tab Bar -->
+          <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-16 sm:mb-28">
+            <button id="tab-btr" class="tab-btn px-6 sm:px-8 py-3 rounded-full font-semibold transition-all duration-300 bg-navy text-white shadow-md" onclick="switchTab('btr')">
+              <span class="text-base sm:text-lg block">Built to Roam</span><span class="text-xs sm:text-sm font-normal opacity-80">The Full TinyGoat Implementation</span>
+            </button>
+            <button id="tab-ott" class="tab-btn px-6 sm:px-8 py-3 rounded-full font-semibold transition-all duration-300 bg-gray-100 text-gray-500" onclick="switchTab('ott')">
+              <span class="text-base sm:text-lg block">On the Trail</span><span class="text-xs sm:text-sm font-normal opacity-80">Targeted Support and Training from TinyGoat</span>
+            </button>
+          </div>
+
+          <!-- TAB 1 CONTENT: Built to Roam -->
+          <div id="content-btr" class="tab-content">
+            <!-- Zone 1: Outcome description -->
+            <div class="mb-12">
+              <span class="inline-block px-4 py-1.5 bg-teal/10 text-teal text-sm font-semibold rounded-full mb-5">For orgs ready to build Claude into how their revenue team operates</span>
+              <h2 class="text-navy text-3xl md:text-4xl font-bold mb-6">Built to Roam. <span class="italic font-normal text-2xl md:text-3xl text-gray-500">The Full TinyGoat Implementation</span></h2>
+              <div class="text-gray-600 text-lg leading-relaxed space-y-4 max-w-3xl">
+                <p>This is a full project engagement, from understanding where your team is today to having Claude configured, adopted, and working across your revenue org. Built entirely around how your team actually sells, manages, and grows. Not a generic rollout.</p>
+                <p>When this is done, your managers know how to lead with Claude. Your sellers use it as part of their daily motion. Leadership can see it in the numbers.</p>
+              </div>
+            </div>
+
+            <!-- Four phases as a journey -->
+            <div class="mb-12">
+              <h3 class="text-navy text-xl md:text-2xl font-bold mb-10">The path from access to adoption.</h3>
+
+              <!-- Horizontal timeline -->
+              <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-0 mb-10">
+                <div class="relative pb-8 md:pb-0 md:pr-6">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-8 h-8 rounded-full bg-teal/10 flex items-center justify-center flex-shrink-0">
+                      <span class="text-teal font-bold text-xs">01</span>
+                    </div>
+                    <h4 class="text-navy font-bold text-lg">"Scout"</h4>
+                  </div>
+                  <p class="text-gray-600 text-sm leading-relaxed">We assess where your team is with Claude, where the real opportunities are, and what needs to happen first.</p>
+                  <div class="hidden md:block absolute top-4 right-0 w-6 text-gray-300">→</div>
+                </div>
+
+                <div class="relative pb-8 md:pb-0 md:pr-6">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-8 h-8 rounded-full bg-teal/10 flex items-center justify-center flex-shrink-0">
+                      <span class="text-teal font-bold text-xs">02</span>
+                    </div>
+                    <h4 class="text-navy font-bold text-lg">"Forge"</h4>
+                  </div>
+                  <p class="text-gray-600 text-sm leading-relaxed">We design and configure Claude around your team's actual revenue motion. The workflows, projects, and use cases that will drive real impact.</p>
+                  <div class="hidden md:block absolute top-4 right-0 w-6 text-gray-300">→</div>
+                </div>
+
+                <div class="relative pb-8 md:pb-0 md:pr-6">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-8 h-8 rounded-full bg-teal/10 flex items-center justify-center flex-shrink-0">
+                      <span class="text-teal font-bold text-xs">03</span>
+                    </div>
+                    <h4 class="text-navy font-bold text-lg">"Leap"</h4>
+                  </div>
+                  <p class="text-gray-600 text-sm leading-relaxed">The adoption phase. We train managers and sellers to use what has been built with real confidence. This is where access becomes actual use.</p>
+                  <div class="hidden md:block absolute top-4 right-0 w-6 text-gray-300">→</div>
+                </div>
+
+                <div class="relative">
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-8 h-8 rounded-full bg-teal/10 flex items-center justify-center flex-shrink-0">
+                      <span class="text-teal font-bold text-xs">04</span>
+                    </div>
+                    <h4 class="text-navy font-bold text-lg">"Roam"</h4>
+                  </div>
+                  <p class="text-gray-600 text-sm leading-relaxed">Ongoing support as your team grows into Claude. This space moves fast and what is possible today will look different in six months. "Roam" keeps your team ahead of it instead of catching up.</p>
+                  <p class="text-gray-500 text-xs mt-2 italic">Available if needed, not required.</p>
+                </div>
+              </div>
+
+              <!-- Callout -->
+              <div class="bg-navy rounded-xl px-8 py-6 mb-4">
+                <p class="text-white font-bold text-lg">"If your team isn't actively using Claude within 14 days of their training session, we come back for additional training and support at no charge."</p>
+              </div>
+              <p class="text-gray-500 text-sm italic">Not every engagement runs all four phases in order. "Scout" tells us where to start and we go from there.</p>
+            </div>
+
+            <!-- Video -->
+            <div class="max-w-3xl mx-auto">
+              <video class="w-full rounded-2xl shadow-lg aspect-video object-contain" width="1280" height="720" controls preload="metadata" playsinline>
+                <source src="/tinygoat-demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+          <!-- TAB 2 CONTENT: On the Trail -->
+          <div id="content-ott" class="tab-content hidden">
+            <!-- Outcome description -->
+            <div class="mb-12">
+              <h2 class="text-navy text-3xl md:text-4xl font-bold mb-6">On the Trail. <span class="italic font-normal text-2xl md:text-3xl text-gray-500">Targeted Support from TinyGoat</span></h2>
+              <div class="text-gray-600 text-lg leading-relaxed space-y-4 max-w-3xl">
+                <p>Not every team is ready for the full implementation. And not every need requires one.</p>
+                <p>Our On the Trail offerings are for revenue teams that need Claude support for something specific. A question, a challenge, a session, a room full of sellers who need to see what is actually possible. Whatever it is, we scope it to what you need and get to work.</p>
+              </div>
+            </div>
+
+            <!-- Format options -->
+            <div class="mb-12">
+              <div class="flex flex-wrap gap-2 md:gap-3">
+                <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-navy text-sm font-medium shadow-sm">Strategy calls</span>
+                <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-navy text-sm font-medium shadow-sm">Team trainings</span>
+                <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-navy text-sm font-medium shadow-sm">Lunch and learns</span>
+                <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-navy text-sm font-medium shadow-sm">Workshops</span>
+                <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-navy text-sm font-medium shadow-sm">Keynotes and speaking</span>
+                <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-navy text-sm font-medium shadow-sm">Virtual sessions</span>
+              </div>
+            </div>
+
+            <!-- Video -->
+            <div class="max-w-3xl mx-auto">
+              <video class="w-full rounded-2xl shadow-lg aspect-video object-contain" width="1280" height="720" controls preload="metadata" playsinline>
+                <source src="/tinygoat-dashboard.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <p class="text-gray-500 text-sm mt-4 text-center italic">Work with TinyGoat to build strategic dashboards and reporting for your revenue team.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How the Process Works -->
+      <section class="px-6 md:px-12 py-16 md:py-24 bg-gray-50">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-navy text-3xl md:text-4xl font-bold text-center mb-16">Here is what working together actually looks like.</h2>
+
+          <div class="grid md:grid-cols-2 gap-12">
+            <!-- Built to Roam Steps -->
+            <div>
+              <span class="inline-block px-4 py-1.5 bg-navy text-white text-sm font-semibold rounded-full mb-8">Built to Roam</span>
+              <div class="space-y-6">
+                <div class="flex gap-4 items-center">
+                  <div class="flex-shrink-0 w-9 h-9 rounded-full bg-teal/10 flex items-center justify-center">
+                    <span class="text-teal font-bold text-sm">1</span>
+                  </div>
+                  <h3 class="text-navy font-bold text-lg">You fill out a short intake when you book</h3>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <div class="flex-shrink-0 w-9 h-9 rounded-full bg-teal/10 flex items-center justify-center">
+                    <span class="text-teal font-bold text-sm">2</span>
+                  </div>
+                  <h3 class="text-navy font-bold text-lg">We talk through the real picture</h3>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <div class="flex-shrink-0 w-9 h-9 rounded-full bg-teal/10 flex items-center justify-center">
+                    <span class="text-teal font-bold text-sm">3</span>
+                  </div>
+                  <h3 class="text-navy font-bold text-lg">We move through the engagement together</h3>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <div class="flex-shrink-0 w-9 h-9 rounded-full bg-teal/10 flex items-center justify-center">
+                    <span class="text-teal font-bold text-sm">4</span>
+                  </div>
+                  <h3 class="text-navy font-bold text-lg">"Roam" is available when you want it</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- On the Trail Steps -->
+            <div>
+              <span class="inline-block px-4 py-1.5 bg-teal text-white text-sm font-semibold rounded-full mb-8">On the Trail</span>
+              <div class="space-y-6">
+                <div class="flex gap-4 items-center">
+                  <div class="flex-shrink-0 w-9 h-9 rounded-full bg-teal/10 flex items-center justify-center">
+                    <span class="text-teal font-bold text-sm">1</span>
+                  </div>
+                  <h3 class="text-navy font-bold text-lg">You fill out a short intake when you book</h3>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <div class="flex-shrink-0 w-9 h-9 rounded-full bg-teal/10 flex items-center justify-center">
+                    <span class="text-teal font-bold text-sm">2</span>
+                  </div>
+                  <h3 class="text-navy font-bold text-lg">We meet and get to work</h3>
+                </div>
+              </div>
+
+              <div class="relative rounded-xl overflow-hidden mt-8">
+                <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-teal to-[#34C759]"></div>
+                <div class="bg-teal/5 px-8 py-6">
+                  <p class="text-navy font-bold text-lg">"A lot of <em>On the Trail</em> sessions turn into something bigger once people see what is possible. That is not the goal going in, but it happens often enough to be worth mentioning."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PART 4: CTA Section -->
+      <section class="px-6 md:px-12 py-16 md:py-24">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-navy text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Ready to move from access to adoption?</h2>
+          <button
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/gabby-tinygoat/30min'});return false;"
+            class="inline-flex items-center justify-center px-8 py-4 bg-gold text-navy font-bold text-lg rounded-full hover:shadow-lg hover:shadow-gold/25 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
+          >
+            Book a Free 30-Minute Diagnostic
+          </button>
+          <p class="text-gray-500 text-sm mt-6">
+            Prefer email? <a href="mailto:info@tinygoat.ai" class="text-teal hover:underline">info@tinygoat.ai</a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <Footer />
+  </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify([
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Built to Roam",
+      "description": "The full TinyGoat implementation. A complete project engagement from understanding where your team is today to having Claude configured, adopted, and working across your revenue org. Built entirely around how your team actually sells, manages, and grows.",
+      "provider": {
+        "@type": "Organization",
+        "name": "TinyGoat",
+        "url": "https://tinygoat.ai"
+      },
+      "serviceType": "Claude AI Implementation for Revenue Teams",
+      "url": "https://tinygoat.ai/how-we-work"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "On the Trail",
+      "description": "Targeted support and training from TinyGoat. For revenue teams that need Claude support for something specific. Strategy calls, team trainings, lunch and learns, workshops, keynotes and speaking, and virtual sessions.",
+      "provider": {
+        "@type": "Organization",
+        "name": "TinyGoat",
+        "url": "https://tinygoat.ai"
+      },
+      "serviceType": "Claude AI Training and Consulting for Revenue Teams",
+      "url": "https://tinygoat.ai/how-we-work"
+    }
+  ])} />
+</Layout>
+
+<script is:inline>
+  function switchTab(tab) {
+    // Hide all content
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+    // Reset all tab buttons
+    document.querySelectorAll('.tab-btn').forEach(el => {
+      el.classList.remove('bg-navy', 'text-white', 'shadow-md');
+      el.classList.add('bg-gray-100', 'text-gray-500');
+    });
+
+    // Show selected content
+    document.getElementById('content-' + tab).classList.remove('hidden');
+    // Activate selected tab
+    const activeTab = document.getElementById('tab-' + tab);
+    activeTab.classList.remove('bg-gray-100', 'text-gray-500');
+    activeTab.classList.add('bg-navy', 'text-white', 'shadow-md');
+  }
+</script>

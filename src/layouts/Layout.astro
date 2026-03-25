@@ -4,13 +4,14 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  rawTitle?: boolean;
 }
 
-const { title, description = "We help sales leaders, RevOps teams, and founders get confident with AI and turn scattered experiments into workflows that actually save time." } = Astro.props;
+const { title, description = "TinyGoat helps revenue teams at high-growth B2B companies get Claude out of the chat window and into the way they actually sell, manage, and grow.", rawTitle = false } = Astro.props;
 
 // Generate canonical URL from current page path
 const canonicalURL = new URL(Astro.url.pathname, 'https://tinygoat.ai').href;
-const fullTitle = `${title} | TinyGoat`;
+const fullTitle = rawTitle ? title : `${title} | TinyGoat`;
 ---
 
 <!doctype html>
@@ -65,7 +66,7 @@ const fullTitle = `${title} | TinyGoat`;
       "name": "TinyGoat",
       "url": "https://tinygoat.ai",
       "logo": "https://tinygoat.ai/tinygoat-logo.png",
-      "description": "We help sales leaders, RevOps teams, and founders get confident with AI and turn scattered experiments into workflows that actually save time.",
+      "description": "TinyGoat helps revenue teams at high-growth B2B companies get Claude out of the chat window and into the way they actually sell, manage, and grow.",
       "email": "info@tinygoat.ai",
       "sameAs": [
         "https://www.linkedin.com/in/gabrielleschiavenato"
@@ -75,7 +76,8 @@ const fullTitle = `${title} | TinyGoat`;
         "name": "Gabrielle Schiavenato",
         "jobTitle": "AI Adoption Consultant for Revenue Teams"
       },
-      "serviceType": ["AI Assessment for Revenue Teams", "AI Training for Sales Teams", "AI Implementation", "Revenue Workflow Optimization", "Sales Process Automation"]
+      "serviceType": ["AI Assessment for Revenue Teams", "AI Training for Sales Teams", "AI Implementation", "Revenue Workflow Optimization", "Sales Process Automation"],
+      "knowsAbout": ["Claude AI", "Claude Enterprise implementation", "Revenue team AI adoption", "Sales enablement", "AI training for sales teams", "B2B AI consulting"]
     })} />
 
     <!-- Google Analytics -->
